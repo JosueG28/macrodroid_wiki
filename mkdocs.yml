@@ -1,0 +1,88 @@
+# 1. METADATOS ESENCIALES (Nombre, Descripción, Autor)
+# 1. ESSENTIAL METADATA (Name, Description, Author)
+site_name: MacroDroid Wiki
+site_description: Unofficial MacroDroid Documentation
+site_author: JosueG28
+
+# 2. CONFIGURACIÓN DEL TEMA (Visuales, Idioma, Paleta de Colores, Fuente)
+# 2. THEME CONFIGURATION (Visuals, Language, Color Palette, Font)
+theme:
+  name: material
+  language: en # Idioma principal para la plantilla / Main language for the template
+  
+  # --- Elementos visuales ---
+  # --- Visual elements ---
+  logo: assets/macrodroid_icon.png
+  favicon: assets/favicon.ico
+  
+  # --- CONFIGURACIÓN DE FUENTE ---
+  # --- FONT CONFIGURATION ---
+  font:
+    text: Inter 
+    code: Inconsolata 
+
+  # Solo dejamos la configuración para el modo oscuro/claro
+  # Only keeping configuration for dark/light mode
+  palette:
+    # Modo Oscuro (slate) / Dark Mode (slate)
+    - scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a tema claro
+    # Modo Claro (default) / Light Mode (default)
+    - scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a tema oscuro
+
+# 3. EXTENSIONES DE MARKDOWN (Para mejorar la calidad del contenido)
+# 3. MARKDOWN EXTENSIONS (To improve content quality)
+markdown_extensions:
+  - admonition        # Permite crear cajas de notas, advertencias, etc.
+                      # Allows creation of notes, warnings, etc. boxes
+  - pymdownx.details  # Permite crear bloques de contenido expandibles/ocultables
+                      # Allows creation of expandable/collapsible content blocks
+
+# 4. PLUGINS ESENCIALES (Multi-Idioma, Búsqueda y Metadatos de Git)
+# 4. ESSENTIAL PLUGINS (Multi-Language, Search, and Git Metadata)
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        # Configuración del Idioma Principal (Inglés) / Primary Language Configuration (English)
+        - locale: en
+          name: English
+          default: true
+          build: true
+          site_name: MacroDroid Wiki
+          site_description: Unofficial MacroDroid Documentation
+          site_author: JosueG28
+          nav: # TUS RUTAS EN INGLÉS / YOUR ENGLISH PATHS
+            - 🏠 Home: index.md
+            
+        # Configuración del Idioma Secundario (Español) / Secondary Language Configuration (Spanish)
+        - locale: es
+          name: Español
+          build: true
+          site_name: MacroDroid Wiki
+          site_description: Documentación no oficial de MacroDroid
+          site_author: JosueG28
+          nav: # TUS RUTAS EN ESPAÑOL / YOUR SPANISH PATHS
+            - 🏠 Inicio: index.md
+
+#  - git-revision-date-localized:
+#      type: date # Muestra la fecha de última modificación / Shows the last modification date
+
+# 5. EXTRAS PARA EL SELECTOR DE IDIOMA
+# 5. EXTRAS FOR LANGUAGE SELECTOR
+extra:
+  alternate:
+    - name: English
+      link: "/"
+      lang: en
+    - name: Español
+      link: "/es/"
+      lang: es
