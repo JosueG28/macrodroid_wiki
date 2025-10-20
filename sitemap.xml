@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>None./</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+    </url>
+    <url>
+        <loc>Nonelog/system_log/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonelog/system_log/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/log/system_log/"/>
+    </url>
+    <url>
+        <loc>Nonelog/user_log/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonelog/user_log/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/log/user_log/"/>
+    </url>
+    <url>
+        <loc>Nonees/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="None"/>
+    </url>
+    <url>
+        <loc>Nonees/log/system_log/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/log/system_log/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonelog/system_log/"/>
+    </url>
+    <url>
+        <loc>Nonees/log/user_log/</loc>
+        <lastmod>2025-10-20</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/log/user_log/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonelog/user_log/"/>
+    </url>
+</urlset>
