@@ -72,9 +72,9 @@ plugins:
           site_author: JosueG28
           nav: # TUS RUTAS EN ESPAÑOL / YOUR SPANISH PATHS
             - 🏠 Inicio: index.md
-
-#  - git-revision-date-localized:
-#      type: date # Muestra la fecha de última modificación / Shows the last modification date
+            
+  - git-revision-date-localized:
+      type: date # Muestra la fecha de última modificación / Shows the last modification date
 
 # 5. EXTRAS PARA EL SELECTOR DE IDIOMA
 # 5. EXTRAS FOR LANGUAGE SELECTOR
