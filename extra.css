@@ -2,12 +2,6 @@
  * ==============================================================================
  * 1. TABLA DE CONTENIDO (TOC) - OCULTAR/MOSTRAR SELECTIVAMENTE
  * ==============================================================================
- *
- * ES: Objetivo: Ocultar el TOC (columna de la derecha) globalmente.
- * Permite que una página individual lo muestre añadiendo 'class: show-toc' en el frontmatter.
- *
- * EN: Target: Hide the TOC (right column) globally.
- * Allows an individual page to show it by adding 'class: show-toc' in the frontmatter.
  */
 
 /* Oculta el TOC por defecto, EXCEPTO si el <body> de la página tiene la clase 'show-toc' */
@@ -33,32 +27,26 @@
 
 /*
  * ==============================================================================
- * 2. VISIBILIDAD DEL LOGO (HEADER) - FONDO Y SOMBRA
+ * 2. VISIBILIDAD DEL LOGO (HEADER) - CORRECCIÓN PARA IMAGEN (.png)
  * ==============================================================================
- *
- * ES: Objetivo: Añadir un fondo blanco/claro y una sombra al icono para asegurar
- * que siempre contraste y se destaque en cualquier esquema de color.
- *
- * EN: Target: Add a white/light background and a shadow to the icon to ensure
- * it always contrasts and stands out in any color scheme.
+ * * ES: Los selectores se corrigen para apuntar directamente al tag <img>.
+ * EN: Selectors are corrected to point directly to the <img> tag.
  */
 
-/* 1. Estilo para el contenedor del logo en la barra superior (Header) */
-.md-header__icon > .md-icon {
+/* 1. Estilo para la IMAGEN del logo en la barra superior (Header) */
+.md-header__button img {
   /* ES: Fondo blanco circular para alto contraste. EN: Circular white background for high contrast. */
   background-color: white; 
   border-radius: 50%; 
-  padding: 4px; 
-  line-height: 1;
+  padding: 4px; /* Relleno para que se vea el fondo blanco */
   /* ES: Sombra sutil para un efecto 3D. EN: Subtle shadow for a 3D effect. */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
-/* 2. Estilo para el logo en la barra lateral de navegación (Sidebar) - Si aplica */
-.md-nav__title > .md-icon {
+/* 2. Estilo para la IMAGEN del logo en la barra lateral de navegación (Sidebar) */
+.md-nav__title img {
   background-color: white; 
   border-radius: 50%;
   padding: 4px; 
-  line-height: 1;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
