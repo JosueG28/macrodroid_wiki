@@ -1,0 +1,76 @@
+/*
+ * ==============================================================================
+ * 1. TABLA DE CONTENIDO (TOC) - OCULTAR/MOSTRAR SELECTIVAMENTE
+ * ==============================================================================
+ */
+
+/* Oculta el TOC por defecto, EXCEPTO si el <body> de la página tiene la clase 'show-toc' */
+:not(.show-toc) .md-nav--secondary {
+    display: none;
+}
+
+/* Oculta el enlace "Source" de la barra lateral (si está activado y se quiere ocultar con el TOC) */
+.md-nav__source {
+    display: none;
+}
+
+/* Ajusta el contenido principal para que ocupe el ancho completo cuando el TOC está oculto */
+.md-grid {
+    max-width: none;
+}
+.md-content {
+    /* Ajusta estos valores si necesitas más o menos margen en los laterales */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*
+ * ==============================================================================
+ * 2. VISIBILIDAD DEL LOGO (HEADER) - CORRECCIÓN PARA IMAGEN (.png)
+ * ==============================================================================
+ * * ES: Los selectores se corrigen para apuntar directamente al tag <img>.
+ * EN: Selectors are corrected to point directly to the <img> tag.
+ */
+
+/* 1. Estilo para la IMAGEN del logo en la barra superior (Header) */
+.md-header__button img {
+  /* ES: Fondo blanco circular para alto contraste. EN: Circular white background for high contrast. */
+  background-color: white; 
+  border-radius: 50%; 
+  padding: 4px; /* Relleno para que se vea el fondo blanco */
+  /* ES: Sombra sutil para un efecto 3D. EN: Subtle shadow for a 3D effect. */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+/* 2. Estilo para la IMAGEN del logo en la barra lateral de navegación (Sidebar) */
+.md-nav__title img {
+  background-color: rgba(255, 255, 255, 0.856); 
+  border-radius: 50%;
+  padding: 4px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilos personalizados para el botón de Buy Me a Coffee */
+
+/* Aplica el color amarillo de BMC al botón en modo claro/automático */
+[data-md-color-scheme="default"] .bmc-button,
+[data-md-color-scheme="preference"] .bmc-button {
+    background-color: #FFDD00 !important; /* Amarillo de BMC */
+    color: #000000 !important;           /* Texto negro */
+}
+
+/* Ajuste para el modo oscuro (esquema slate) */
+[data-md-color-scheme="slate"] .bmc-button {
+    background-color: #FFDD00 !important; /* Amarillo de BMC */
+    color: #000000 !important;           /* Texto negro */
+    /* Asegura que no se apliquen otros estilos del modo oscuro */
+    border: none;
+}
+
+/* Cambia el color del ícono (svg) dentro del botón */
+.bmc-button .twemoji svg {
+    fill: #000000 !important;
+}
