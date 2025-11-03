@@ -71,11 +71,11 @@
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/no_trigger_required/no_trigger_required/"/>
     </url>
     <url>
-        <loc>Nonemagic_text/trigger_required/trigger_required/</loc>
+        <loc>Nonemagic_text/trigger_required/requires_trigger/</loc>
         <lastmod>2025-11-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonemagic_text/trigger_required/trigger_required/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/trigger_required/trigger_required/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemagic_text/trigger_required/requires_trigger/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/trigger_required/requires_trigger/"/>
     </url>
     <url>
         <loc>Nonestopwatches/about_stopwatches/</loc>
@@ -911,11 +911,11 @@
         <xhtml:link rel="alternate" hreflang="en" href="Nonemagic_text/no_trigger_required/no_trigger_required/"/>
     </url>
     <url>
-        <loc>Nonees/magic_text/trigger_required/trigger_required/</loc>
+        <loc>Nonees/magic_text/trigger_required/requires_trigger/</loc>
         <lastmod>2025-11-03</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/trigger_required/trigger_required/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Nonemagic_text/trigger_required/trigger_required/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/trigger_required/requires_trigger/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemagic_text/trigger_required/requires_trigger/"/>
     </url>
     <url>
         <loc>Nonees/stopwatches/about_stopwatches/</loc>
@@ -1679,12 +1679,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/variables/variable_list/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonevariables/variable_list/"/>
-    </url>
-    <url>
-        <loc>Nonees/magic_text/trigger_required/requires_trigger/</loc>
-        <lastmod>2025-11-03</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/magic_text/trigger_required/requires_trigger/"/>
     </url>
     <url>
         <loc>Nonees/triggers/about_actions/</loc>
