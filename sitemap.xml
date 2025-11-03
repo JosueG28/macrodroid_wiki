@@ -8,6 +8,13 @@
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/"/>
     </url>
     <url>
+        <loc>Noneaction_blocks/about_action_blocks/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneaction_blocks/about_action_blocks/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/action_blocks/about_action_blocks/"/>
+    </url>
+    <url>
         <loc>Noneactions/about_actions/</loc>
         <lastmod>2025-11-03</lastmod>
         <changefreq>daily</changefreq>
@@ -34,6 +41,27 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="Noneconstraints/constraint_list/"/>
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/constraints/constraint_list/"/>
+    </url>
+    <url>
+        <loc>Nonemacrodroid_log/system_log/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemacrodroid_log/system_log/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/macrodroid_log/system_log/"/>
+    </url>
+    <url>
+        <loc>Nonemacrodroid_log/user_log/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemacrodroid_log/user_log/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/macrodroid_log/user_log/"/>
+    </url>
+    <url>
+        <loc>Nonestopwatches/about_stopwatches/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonestopwatches/about_stopwatches/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/stopwatches/about_stopwatches/"/>
     </url>
     <url>
         <loc>Nonetriggers/about_triggers/</loc>
@@ -799,6 +827,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="None"/>
     </url>
     <url>
+        <loc>Nonees/action_blocks/about_action_blocks/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/action_blocks/about_action_blocks/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneaction_blocks/about_action_blocks/"/>
+    </url>
+    <url>
         <loc>Nonees/actions/about_actions/</loc>
         <lastmod>2025-11-03</lastmod>
         <changefreq>daily</changefreq>
@@ -825,6 +860,27 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/constraints/constraint_list/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Noneconstraints/constraint_list/"/>
+    </url>
+    <url>
+        <loc>Nonees/macrodroid_log/system_log/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/macrodroid_log/system_log/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemacrodroid_log/system_log/"/>
+    </url>
+    <url>
+        <loc>Nonees/macrodroid_log/user_log/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/macrodroid_log/user_log/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonemacrodroid_log/user_log/"/>
+    </url>
+    <url>
+        <loc>Nonees/stopwatches/about_stopwatches/</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="Nonees/stopwatches/about_stopwatches/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonestopwatches/about_stopwatches/"/>
     </url>
     <url>
         <loc>Nonees/triggers/about_triggers/</loc>
