@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # **Disparadores: El inicio de la automatización**
 
 La función principal de **MacroDroid** es automatizar tareas en tu dispositivo — y todo comienza con un **Disparador**.  

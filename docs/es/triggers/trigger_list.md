@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Lista de disparadores
 
 ### [Reconocimiento de actividad](activity_recognition.md)

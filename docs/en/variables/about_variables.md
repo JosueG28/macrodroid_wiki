@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Variables in MacroDroid
 
 Variables store and manipulate data in your macros — they are containers that hold values your macros use and can change during execution.

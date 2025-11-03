@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Variables en MacroDroid
 
 Las variables almacenan y manipulan datos en tus macros: son contenedores que guardan valores que tus macros usan y pueden cambiar durante la ejecución.

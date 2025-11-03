@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # List of triggers
 
 ### [Activity Recognition](activity_recognition.md)

@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # **Triggers: Starting the Automation**
 
 The core function of **MacroDroid** is to automate tasks on your device — and everything begins with a **Trigger**.  

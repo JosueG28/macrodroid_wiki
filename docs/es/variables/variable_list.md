@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Tipos de Variables Soportados
 
 MacroDroid admite varios tipos de variables para almacenar distintos tipos de datos.  

@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # 📱 Welcome to the Unofficial MacroDroid Wiki
 
 **Created and maintained by Josue Garcia**

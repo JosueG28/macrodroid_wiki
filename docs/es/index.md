@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # 📱 Bienvenido a la Wiki No Oficial de MacroDroid
 
 **Creada y mantenida por Josué García**

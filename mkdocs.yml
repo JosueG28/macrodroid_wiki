@@ -14,6 +14,9 @@ theme:
   # --- Visual elements ---
   logo: assets/macrodroid_icon.png
   favicon: assets/favicon.ico
+  # --- HIDE TOC ---
+  features:
+    - navigation.toc.hide
   
   # --- CONFIGURACIÓN DE FUENTE ---
   # --- FONT CONFIGURATION ---
@@ -83,9 +86,16 @@ plugins:
             - 📁 Constraints: 
                 - 📄 About the constraints: constraints/about_constraints.md
                 - 📄 Constraint list: constraints/constraint_list.md
+            - 📁 MacroDroid Log: 
+                - 📄 System log: macrodroid_log/system_log.md
+                - 📄 User Log: macrodroid_log/user_log.md
+            - 📁 Stopwatches:
+                - 📄 About stopwatches: stopwatches/about_stopwatches.md
             - 📁 Variables: 
                 - 📄 About the variables: variables/about_variables.md
                 - 📄 Variable list: variables/variable_list.md
+            - 📁 Action Blocks:
+                - 📄 About action blocks: action_blocks/about_action_blocks.md
             
         # Configuración del Idioma Secundario (Español) / Secondary Language Configuration (Spanish)
         - locale: es
@@ -108,6 +118,13 @@ plugins:
             - 📁 Variables:
                   - 📄 Acerca de las variables: variables/about_variables.md
                   - 📄 Lista de variables: variables/variable_list.md
+            - 📁 Registro de MacroDroid: 
+                  - 📄 Registro del sistema: macrodroid_log/system_log.md
+                  - 📄 Registro de usuario: macrodroid_log/user_log.md
+            - 📁 Action Blocks:
+                  - 📄 Acerca de los Bloques de Accion: action_blocks/about_action_blocks.md
+            - 📁 Cronómetros:
+                  - 📄 Acerca de los cronómetros: stopwatches/about_stopwatches.md
 
   - git-revision-date-localized:
       type: date # Muestra la fecha de última modificación / Shows the last modification date
@@ -124,3 +141,11 @@ extra:
     - name: Español
       link: "/macrodroid_wiki/es/"
       lang: es
+      
+extra_css:
+  - extra.css # Ajusta la ruta si tu archivo no está en la raíz de 'docs/'
+# ---
+# Esto inyecta la clase CSS 'show-toc' en el <body> de la página,
+# lo que anula la regla de 'display: none' en nuestro CSS modificado.
+# class: show-toc
+# ---

@@ -1,8 +1,3 @@
----
-hide:
-  - toc
----
-
 # Supported Variable Types
 
 MacroDroid supports several variable types to store different kinds of data.  
