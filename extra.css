@@ -1,0 +1,64 @@
+/*
+ * ==============================================================================
+ * 1. TABLA DE CONTENIDO (TOC) - OCULTAR/MOSTRAR SELECTIVAMENTE
+ * ==============================================================================
+ *
+ * ES: Objetivo: Ocultar el TOC (columna de la derecha) globalmente.
+ * Permite que una página individual lo muestre añadiendo 'class: show-toc' en el frontmatter.
+ *
+ * EN: Target: Hide the TOC (right column) globally.
+ * Allows an individual page to show it by adding 'class: show-toc' in the frontmatter.
+ */
+
+/* Oculta el TOC por defecto, EXCEPTO si el <body> de la página tiene la clase 'show-toc' */
+:not(.show-toc) .md-nav--secondary {
+    display: none;
+}
+
+/* Oculta el enlace "Source" de la barra lateral (si está activado y se quiere ocultar con el TOC) */
+.md-nav__source {
+    display: none;
+}
+
+/* Ajusta el contenido principal para que ocupe el ancho completo cuando el TOC está oculto */
+.md-grid {
+    max-width: none;
+}
+.md-content {
+    /* Ajusta estos valores si necesitas más o menos margen en los laterales */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*
+ * ==============================================================================
+ * 2. VISIBILIDAD DEL LOGO (HEADER) - FONDO Y SOMBRA
+ * ==============================================================================
+ *
+ * ES: Objetivo: Añadir un fondo blanco/claro y una sombra al icono para asegurar
+ * que siempre contraste y se destaque en cualquier esquema de color.
+ *
+ * EN: Target: Add a white/light background and a shadow to the icon to ensure
+ * it always contrasts and stands out in any color scheme.
+ */
+
+/* 1. Estilo para el contenedor del logo en la barra superior (Header) */
+.md-header__icon > .md-icon {
+  /* ES: Fondo blanco circular para alto contraste. EN: Circular white background for high contrast. */
+  background-color: white; 
+  border-radius: 50%; 
+  padding: 4px; 
+  line-height: 1;
+  /* ES: Sombra sutil para un efecto 3D. EN: Subtle shadow for a 3D effect. */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); 
+}
+
+/* 2. Estilo para el logo en la barra lateral de navegación (Sidebar) - Si aplica */
+.md-nav__title > .md-icon {
+  background-color: white; 
+  border-radius: 50%;
+  padding: 4px; 
+  line-height: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
