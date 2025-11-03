@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # 📱 Bienvenido a la Wiki No Oficial de MacroDroid
 
 **Creada y mantenida por Josué García**
@@ -11,22 +16,22 @@ Esta wiki tiene como objetivo ofrecer documentación clara, estructurada y const
 
 Ya seas principiante o usuario avanzado, esta wiki tiene todo lo que necesitas. Explora las secciones clave de MacroDroid:
 
-- [**Disparadores**](triggers/index.md)  
+- [**Disparadores**](triggers/about_triggers.md)  
   Lo que inicia tus macros.  
 
-- [**Acciones**](actions/index.md)  
+- [**Acciones**](actions/about_actions.md)  
   Las cosas que MacroDroid puede hacer en respuesta a los disparadores.  
 
-- [**Restricciones**](constraints/index.md)  
+- [**Restricciones**](constraints/about_constraints.md)  
   Añade lógica y control sobre cuándo se activan tus macros.
 
-- [**Variables**](variables/index.md)  
+- [**Variables**](variables/about_variables.md)  
   Guarda, modifica y utiliza valores dinámicos dentro de tus macros.
 
-- [**Plugins e Integraciones**](plugins.md)  
+- [**Plugins e Integraciones**]()  
   Expande las capacidades de MacroDroid con herramientas externas.
 
-- [**Texto Mágico**](magic_text/index.md)  
+- [**Texto Mágico**]()  
   Inserta contenido dinámico en notificaciones, registros y más.
 
 ---

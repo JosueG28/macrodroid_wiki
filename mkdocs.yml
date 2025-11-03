@@ -21,29 +21,41 @@ theme:
     text: Inter 
     code: Inconsolata 
 
-  # Solo dejamos la configuración para el modo oscuro/claro
-  # Only keeping configuration for dark/light mode
+  # Paleta de Colores: Configuración CORREGIDA para el menú desplegable (3 opciones).
+  # Al haber tres entradas en la lista 'palette', se mostrará un menú desplegable.
   palette:
-    # Modo Oscuro (slate) / Dark Mode (slate)
-    - scheme: slate
-      primary: deep purple
+    # 1. MODO AUTOMÁTICO (Predeterminado: Detecta la preferencia del sistema)
+    - media: "(prefers-color-scheme)" # Coincide con cualquier preferencia de esquema de color del sistema
+      scheme: preference
+      primary: blue                    # Color de marca MacroDroid
+      accent: blue
       toggle:
-        icon: material/weather-night
-        name: Cambiar a tema claro
-    # Modo Claro (default) / Light Mode (default)
-    - scheme: default
-      primary: deep purple
+        icon: material/brightness-auto 
+        name: Seguir la preferencia del sistema
+
+    # 2. MODO CLARO (Opción manual)
+    - media: "(prefers-color-scheme: light)" # Ayuda a que el tema sepa cuál es el esquema de luz
+      scheme: default
+      primary: blue
+      accent: black                    # Alto contraste en modo claro
       toggle:
         icon: material/weather-sunny
-        name: Cambiar a tema oscuro
+        name: Cambiar a tema Oscuro (Manual)
+
+    # 3. MODO OSCURO (Opción manual)
+    - media: "(prefers-color-scheme: dark)" # Ayuda a que el tema sepa cuál es el esquema oscuro
+      scheme: slate
+      primary: blue
+      accent: white                    # Alto contraste en modo oscuro
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a tema Claro (Manual)
 
 # 3. EXTENSIONES DE MARKDOWN (Para mejorar la calidad del contenido)
 # 3. MARKDOWN EXTENSIONS (To improve content quality)
 markdown_extensions:
   - admonition        # Permite crear cajas de notas, advertencias, etc.
-                      # Allows creation of notes, warnings, etc. boxes
   - pymdownx.details  # Permite crear bloques de contenido expandibles/ocultables
-                      # Allows creation of expandable/collapsible content blocks
 
 # 4. PLUGINS ESENCIALES (Multi-Idioma, Búsqueda y Metadatos de Git)
 # 4. ESSENTIAL PLUGINS (Multi-Language, Search, and Git Metadata)
@@ -62,6 +74,18 @@ plugins:
           site_author: JosueG28
           nav: # TUS RUTAS EN INGLÉS / YOUR ENGLISH PATHS
             - 🏠 Home: index.md
+            - 📁 Triggers: 
+                - 📄 About the triggers: triggers/about_triggers.md
+                - 📄 Trigger list: triggers/trigger_list.md
+            - 📁 Actions:
+                - 📄 About the actions: actions/about_actions.md
+                - 📄 Action list: actions/action_list.md
+            - 📁 Constraints: 
+                - 📄 About the constraints: constraints/about_constraints.md
+                - 📄 Constraint list: constraints/constraint_list.md
+            - 📁 Variables: 
+                - 📄 About the variables: variables/about_variables.md
+                - 📄 Variable list: variables/variable_list.md
             
         # Configuración del Idioma Secundario (Español) / Secondary Language Configuration (Spanish)
         - locale: es
@@ -72,17 +96,31 @@ plugins:
           site_author: JosueG28
           nav: # TUS RUTAS EN ESPAÑOL / YOUR SPANISH PATHS
             - 🏠 Inicio: index.md
-            
+            - 📁 Disparadores: 
+                  - 📄 Acerca de los disparadores: triggers/about_triggers.md
+                  - 📄 lista de disparadores: triggers/trigger_list.md
+            - 📁 Acciones: 
+                  - 📄 Acerca de las acciones: actions/about_actions.md
+                  - 📄 lista de acciones: actions/action_list.md 
+            - 📁 Restricciones:
+                  - 📄 Acerca de las restricciones: constraints/about_constraints.md
+                  - 📄 lista de restricciones: constraints/constraint_list.md
+            - 📁 Variables:
+                  - 📄 Acerca de las variables: variables/about_variables.md
+                  - 📄 Lista de variables: variables/variable_list.md
+
   - git-revision-date-localized:
       type: date # Muestra la fecha de última modificación / Shows the last modification date
 
-# 5. EXTRAS PARA EL SELECTOR DE IDIOMA
 # 5. EXTRAS FOR LANGUAGE SELECTOR
 extra:
+# Oculta el mensaje "Hecho con Material for MkDocs" en el pie de página
+  generator: false 
+
   alternate:
     - name: English
-      link: "/"
+      link: "/macrodroid_wiki/"
       lang: en
     - name: Español
-      link: "/es/"
+      link: "/macrodroid_wiki/es/"
       lang: es
