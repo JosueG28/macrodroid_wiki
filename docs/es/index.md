@@ -35,7 +35,7 @@ Ya seas principiante o usuario avanzado, esta wiki tiene todo lo que necesitas. 
 
 Esta wiki está en desarrollo activo. Algunas páginas pueden estar incompletas o en progreso — vuelve regularmente para ver las actualizaciones.
 
-¿Tienes sugerencias o encontraste algo que podría mejorarse? Puedes compartir tus ideas o abrir un *issue* en [GitHub](https://github.com/JosueG28/macrodroid-wiki). Se agradecen las contribuciones y comentarios, aunque su inclusión o respuesta no están garantizadas.
+¿Tienes sugerencias o encontraste algo que podría mejorarse? Puedes compartir tus ideas o abrir un *issue* en [GitHub](https://github.com/JosueG28/macrodroid_wiki/issues). Se agradecen las contribuciones y comentarios, aunque su inclusión o respuesta no están garantizadas.
 
 ---
 

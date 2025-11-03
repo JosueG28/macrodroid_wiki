@@ -35,7 +35,7 @@ Whether you're a beginner or a power user, this wiki has you covered. Explore ke
 
 This wiki is under active development. Some pages may be incomplete or in progress — check back regularly for updates.
 
-Have suggestions or found something worth improving? You're welcome to share ideas or open an issue on [GitHub](https://github.com/JosueG28/macrodroid-wiki). Contributions and feedback are appreciated, but inclusion or response isn't guaranteed.
+Have suggestions or found something worth improving? You're welcome to share ideas or open an issue on [GitHub](hhttps://github.com/JosueG28/macrodroid_wiki/issues). Contributions and feedback are appreciated, but inclusion or response isn't guaranteed.
 
 ---
 
