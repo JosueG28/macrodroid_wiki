@@ -1,15 +1,14 @@
-// Widget flotante Buy Me a Coffee
-(function() {
-    var script = document.createElement('script');
-    script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js";
-    script.setAttribute("data-name", "BMC-Widget");
-    script.setAttribute("data-cfasync", "false");
-    script.setAttribute("data-id", "josueg28");
-    script.setAttribute("data-description", "Support me on Buy me a coffee!");
-    script.setAttribute("data-message", "");
-    script.setAttribute("data-color", "#40DCA5");
-    script.setAttribute("data-position", "Right");
-    script.setAttribute("data-x_margin", "18");
-    script.setAttribute("data-y_margin", "18");
-    document.body.appendChild(script);
-})();
+var a = document.createElement('a');
+a.href = "https://www.buymeacoffee.com/josueg28";
+a.innerText = "☕ Buy Me a Coffee";
+a.style.position = "fixed";
+a.style.bottom = "18px";
+a.style.right = "18px";
+a.style.background = "#40DCA5";
+a.style.color = "white";
+a.style.padding = "12px 16px";
+a.style.borderRadius = "8px";
+a.style.fontWeight = "bold";
+a.style.textDecoration = "none";
+a.style.zIndex = "9999";
+document.body.appendChild(a);
