@@ -77,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#magic-text-in-macrodroid" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -924,6 +929,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 About magic text
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -936,6 +956,79 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-magic-text-and-where-to-find-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Magic Text and Where to Find It
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starter-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starter Tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1012,6 +1105,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-magic-text-and-where-to-find-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is Magic Text and Where to Find It
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#starter-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Starter Tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1027,7 +1184,51 @@
 
 
 
-  <h1>📄 About magic text</h1>
+<h1 id="magic-text-in-macrodroid">Magic Text in MacroDroid</h1>
+<p><strong>Magic Text</strong> lets you inject live, dynamic data into your macros instead of static text. Think battery level, current time, sensor info, or location — values that update in real time when your macro runs. This turns basic automations into smart, context-aware power moves.</p>
+<p><a href="../trigger_required/requires_trigger/">Magic Text (requires trigger)</a><br />
+<a href="../no_trigger_required/no_trigger_required/">Magic Text (no trigger needed)</a></p>
+<hr />
+<h2 id="what-is-magic-text-and-where-to-find-it">What Is Magic Text and Where to Find It</h2>
+<p>Whenever you see a <strong>"..."</strong> button next to a text field in triggers, actions, or constraints, that's your gateway to Magic Text. Clicking it shows context-relevant options you can use.</p>
+<p>These placeholders resolve their values at runtime, reflecting your device’s current state.</p>
+<p><strong>Example:</strong><br />
+If a notification says: <code>Battery at {battery}%</code> and your battery is at 42%, MacroDroid replaces <code>{battery}</code> with <code>42</code>, so the result is:<br />
+<strong>"Battery at 42%"</strong></p>
+<hr />
+<h2 id="how-it-works">How It Works</h2>
+<p>Magic Text acts like a live placeholder. When the macro is triggered, MacroDroid replaces the placeholder with its current value. Ideal for customizing messages or controlling logic in real time.</p>
+<hr />
+<h2 id="manual-usage">Manual Usage</h2>
+<p>If you know the Magic Text code, you can type it directly into a text field instead of selecting it.</p>
+<p><strong>Keep in mind:</strong></p>
+<ul>
+<li><strong>Syntax matters.</strong> <code>{battery}</code> works — <code>{batery}</code> does not.  </li>
+<li><strong>Always test.</strong> Run your macro to ensure Magic Text resolves correctly.</li>
+</ul>
+<hr />
+<h2 id="formats">Formats</h2>
+<p>There are two supported formats:</p>
+<ul>
+<li><strong>Curly brackets <code>{}</code></strong> – Modern and preferred.  </li>
+<li><strong>Square brackets <code>[]</code></strong> – Legacy format (still works, but less ideal).</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>{battery}</code> → 42  </li>
+<li><code>[battery]</code> → 42 (functional, but not recommended)</li>
+</ul>
+<p>Use curly brackets for cleaner, more reliable results.</p>
+<hr />
+<h2 id="starter-tips">Starter Tips</h2>
+<ul>
+<li>Click the <strong>"..."</strong> button to explore available Magic Text options.</li>
+<li>Try <code>{battery}</code> in a notification to get started.</li>
+<li>Test your macros to confirm everything works as expected.</li>
+</ul>
+<hr />
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>Magic Text transforms rigid automations into adaptive, intelligent workflows. It helps you display real-time data, respond to current conditions, and create smarter macros. Whether you're a beginner or a seasoned user, mastering Magic Text will greatly expand what you can build with MacroDroid.</p>
 
 
 
@@ -1035,29 +1236,6 @@
 
 
 
-
-
-  
-    
-  
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2025 19:34:07 UTC">November 3, 2025</span>
-  </span>
-
-    
-    
-    
-    
-  </aside>
 
 
 

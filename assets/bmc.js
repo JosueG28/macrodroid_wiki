@@ -4,7 +4,7 @@
     coffee.href = 'https://www.buymeacoffee.com/josueg28';
     coffee.target = '_blank';
     coffee.rel = 'noopener';
-    coffee.title = '¡Apóyame con un cafecito! ☕';
+    coffee.title = 'Buy me a coffee! ☕';
     coffee.setAttribute('aria-label', 'Buy me a coffee');
 
     // Icono SVG puro (sin dependencias)
