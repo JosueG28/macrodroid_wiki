@@ -98,8 +98,8 @@ plugins:
                 - 📄 About action blocks: action_blocks/about_action_blocks.md
             - 📁 Magic text:
                 - 📄 About magic text: magic_text/about_magic_text.md
-                - 📄 Requires trigger: magic_text/requires_trigger.md
-                - 📄 No trigger required: magic_text/no_trigger_required.md
+                - 📄 Requires trigger: magic_text/trigger_required/requires_trigger.md
+                - 📄 No trigger required: magic_text/no_trigger_required/no_trigger_required.md
             
         # Configuración del Idioma Secundario (Español) / Secondary Language Configuration (Spanish)
         - locale: es
@@ -131,8 +131,8 @@ plugins:
                   - 📄 Acerca de los cronómetros: stopwatches/about_stopwatches.md
             - 📁 Texto mágico:
                   - 📄 Acerca del texto mágico: magic_text/about_magic_text.md
-                  - 📄 Requiere disparador: magic_text/requires_trigger.md
-                  - 📄 No requiere disparador: magic_text/no_trigger_required.md
+                  - 📄 Requiere disparador: magic_text/trigger_required/requires_trigger.md
+                  - 📄 No requiere disparador: magic_text/no_trigger_required/no_trigger_required.md
 
   - git-revision-date-localized:
       type: date # Muestra la fecha de última modificación / Shows the last modification date
@@ -140,8 +140,8 @@ plugins:
 # 5. EXTRAS FOR LANGUAGE SELECTOR
 extra:
 # Oculta el mensaje "Hecho con Material for MkDocs" en el pie de página
-  generator: false 
-
+  generator: false
+# Configuración del selector de idioma
   alternate:
     - name: English
       link: "/macrodroid_wiki/"
@@ -157,3 +157,5 @@ extra_css:
 # lo que anula la regla de 'display: none' en nuestro CSS modificado.
 # class: show-toc
 # ---
+extra_javascript:
+  - assets/bmc.js
