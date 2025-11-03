@@ -1,0 +1,2792 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Unofficial MacroDroid Documentation">
+      
+      
+        <meta name="author" content="JosueG28">
+      
+      
+      
+        <link rel="prev" href="../about_triggers/">
+      
+      
+        <link rel="next" href="../../actions/about_actions/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>📄 Trigger list - MacroDroid Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CInconsolata:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Inconsolata"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#list-of-triggers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MacroDroid Wiki" class="md-header__button md-logo" aria-label="MacroDroid Wiki" data-md-component="logo">
+      
+  <img src="../../assets/macrodroid_icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MacroDroid Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📄 Trigger list
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="preference" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Seguir la preferencia del sistema"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Seguir la preferencia del sistema" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="black"  aria-label="Cambiar a tema Oscuro (Manual)"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a tema Oscuro (Manual)" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="white"  aria-label="Cambiar a tema Claro (Manual)"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Cambiar a tema Claro (Manual)" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../es/triggers/trigger_list/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MacroDroid Wiki" class="md-nav__button md-logo" aria-label="MacroDroid Wiki" data-md-component="logo">
+      
+  <img src="../../assets/macrodroid_icon.png" alt="logo">
+
+    </a>
+    MacroDroid Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📁 Triggers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            📁 Triggers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about_triggers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 About the triggers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 Trigger list
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 Trigger list
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activity-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity Recognition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-service-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Service State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#airplane-mode-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Airplane Mode Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android-wear" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android Wear
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-activity-launchedclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Activity Launched/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-installremoveupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Install/Remove/Update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-launchedclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Launched/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-rotate-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto Rotate Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autosync-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoSync Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-saver-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Saver State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Temperature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-beacon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth Beacon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calendar-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calendar Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Active
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-ended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Ended
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-incoming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Incoming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-missed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Missed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-outgoing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Outgoing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cell-tower-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cell Tower Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clipboard-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clipboard Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-theme-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dark Theme Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-connectivity-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Connectivity Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-of-weekmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day of Week/Month
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day/Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daydream-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daydream On/Off
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Boot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-dockedundocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Docked/Undocked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-unlocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Unlocked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dial-phone-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dial Phone Number
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empty-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Trigger
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#failed-login-attempt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Failed Login Attempt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fingerprint-gesture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fingerprint Gesture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flip-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flip Device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floating Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geofence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geofence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Assistant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gps-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPS Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headphones-insertremove" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headphones Insert/Remove
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hotspot-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotspot Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http-server-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Server Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intent-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intent Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-address-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ip Address Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#light-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logcat-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logcat Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macro Enabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-finished" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macro Finished
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-drawer-openclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Drawer Open/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-icon-long-press-shortcut" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Icon Long Press Shortcut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-initialised" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Initialised
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-mode-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Mode Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-variable-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Variable Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-button-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Button Pressed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-button-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Button V2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-track-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Track Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-service-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Service Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#musicsound-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Music/Sound Playing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfc-enabled-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFC Enabled State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfc-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFC Tag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification-bar-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification Bar Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photo-taken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photo Taken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popup-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      PopUp Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-button-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Button Toggle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-connecteddisconnected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Connected/Disconnected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priority-modedo-not-disturb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority Mode/Do Not Disturb
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximity-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proximity Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-settings-tile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Settings Tile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roaming-startedstopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roaming Started/Stopped
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen On/Off
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-orientation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Orientation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshot Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shake-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shake Device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shortcut-launched" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortcut Launched
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#silent-mode-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Silent Mode Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sim-card-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIM Card Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sleep
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sms-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sms-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Sent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spotify
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopwatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopwatch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sunsetsunrise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sunset/Sunrise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swipe-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swipe Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-log-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Log Entry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-setting-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Setting Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taskerlocale-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasker/Locale Plugin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-shared-to-macrodroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Shared to MacroDroid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Click
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-device-connectdisconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Device Connect/Disconnect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-button-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Button Pressed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-state-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      VPN State Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wear-os-complication-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wear OS Complication Click
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weather" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weather
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webhook URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widget-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Widget Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-ssid-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wifi SSID Transition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-state-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wifi State Change
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📁 Actions
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            📁 Actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/about_actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 About the actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/action_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 Action list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📁 Constraints
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            📁 Constraints
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constraints/about_constraints/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 About the constraints
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../constraints/constraint_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 Constraint list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📁 Variables
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📁 Variables
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/about_variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 About the variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../variables/variable_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📄 Variable list
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#activity-recognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Activity Recognition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessibility-service-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accessibility Service State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#airplane-mode-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Airplane Mode Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#android-wear" class="md-nav__link">
+    <span class="md-ellipsis">
+      Android Wear
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-activity-launchedclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Activity Launched/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#app-installremoveupdate" class="md-nav__link">
+    <span class="md-ellipsis">
+      App Install/Remove/Update
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-launchedclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Launched/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-rotate-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto Rotate Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autosync-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      AutoSync Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-saver-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Saver State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#battery-temperature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Battery Temperature
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-beacon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth Beacon
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bluetooth-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bluetooth Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calendar-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calendar Event
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Active
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-ended" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Ended
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-incoming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Incoming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-missed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Missed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#call-outgoing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Call Outgoing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cell-tower-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cell Tower Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clipboard-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clipboard Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dark-theme-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dark Theme Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-connectivity-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Connectivity Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-of-weekmonth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day of Week/Month
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daytime" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day/Time
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daydream-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daydream On/Off
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-boot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Boot
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-dockedundocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Docked/Undocked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device-unlocked" class="md-nav__link">
+    <span class="md-ellipsis">
+      Device Unlocked
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dial-phone-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dial Phone Number
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#empty-trigger" class="md-nav__link">
+    <span class="md-ellipsis">
+      Empty Trigger
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#failed-login-attempt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Failed Login Attempt
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fingerprint-gesture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fingerprint Gesture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flip-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flip Device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Floating Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geofence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geofence
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#google-assistant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Google Assistant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gps-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPS Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headphones-insertremove" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headphones Insert/Remove
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#home-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Home Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hotspot-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hotspot Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#http-server-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      HTTP Server Request
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intent-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intent Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-address-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ip Address Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#light-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Light Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logcat-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logcat Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macro Enabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macro-finished" class="md-nav__link">
+    <span class="md-ellipsis">
+      Macro Finished
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-drawer-openclosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Drawer Open/Closed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-icon-long-press-shortcut" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Icon Long Press Shortcut
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-initialised" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Initialised
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-mode-changed" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Mode Changed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#macrodroid-variable-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacroDroid Variable Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-button-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Button Pressed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-button-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Button V2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-track-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Track Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mobile-service-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mobile Service Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#musicsound-playing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Music/Sound Playing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfc-enabled-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFC Enabled State
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nfc-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      NFC Tag
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification-bar-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notification Bar Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photo-taken" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photo Taken
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popup-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      PopUp Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-button-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Button Toggle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-connecteddisconnected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Connected/Disconnected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priority-modedo-not-disturb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority Mode/Do Not Disturb
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proximity-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proximity Sensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-settings-tile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Settings Tile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regular-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regular Interval
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roaming-startedstopped" class="md-nav__link">
+    <span class="md-ellipsis">
+      Roaming Started/Stopped
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-onoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen On/Off
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-orientation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screen Orientation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshot-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshot Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shake-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shake Device
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shortcut-launched" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortcut Launched
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#silent-mode-enableddisabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Silent Mode Enabled/Disabled
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sim-card-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      SIM Card Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sleep" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sleep
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sms-received" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Received
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sms-sent" class="md-nav__link">
+    <span class="md-ellipsis">
+      SMS Sent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spotify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spotify
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stopwatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stopwatch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sunsetsunrise" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sunset/Sunrise
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swipe-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Swipe Screen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-log-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Log Entry
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-setting-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Setting Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taskerlocale-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasker/Locale Plugin
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-shared-to-macrodroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Shared to MacroDroid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ui-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      UI Click
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usb-device-connectdisconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      USB Device Connect/Disconnect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-button-pressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Button Pressed
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volume-button-long-press" class="md-nav__link">
+    <span class="md-ellipsis">
+      Volume Button Long Press
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vpn-state-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      VPN State Change
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wear-os-complication-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wear OS Complication Click
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weather" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weather
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webhook-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Webhook URL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#widget-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Widget Button
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-ssid-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wifi SSID Transition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-state-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wifi State Change
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="list-of-triggers">List of triggers</h1>
+<h3 id="activity-recognition"><a href="../activity_recognition/">Activity Recognition</a></h3>
+<h3 id="accessibility-service-state"><a href="../accessibility_service_state/">Accessibility Service State</a></h3>
+<h3 id="airplane-mode-changed"><a href="../airplane_mode_changed/">Airplane Mode Changed</a></h3>
+<h3 id="android-wear"><a href="../android_wear/">Android Wear</a></h3>
+<h3 id="app-activity-launchedclosed"><a href="../app_activity_launched_closed/">App Activity Launched/Closed</a></h3>
+<h3 id="app-installremoveupdate"><a href="../app_install_remove_update/">App Install/Remove/Update</a></h3>
+<h3 id="application-launchedclosed"><a href="../application_launched_closed/">Application Launched/Closed</a></h3>
+<h3 id="auto-rotate-changed"><a href="../auto_rotate_changed/">Auto Rotate Changed</a></h3>
+<h3 id="autosync-changed"><a href="../autosync_changed/">AutoSync Changed</a></h3>
+<h3 id="battery-level"><a href="../battery_level/">Battery Level</a></h3>
+<h3 id="battery-saver-state"><a href="../battery_saver_state/">Battery Saver State</a></h3>
+<h3 id="battery-temperature"><a href="../battery_temperature/">Battery Temperature</a></h3>
+<h3 id="bluetooth-beacon"><a href="../bluetooth_beacon/">Bluetooth Beacon</a></h3>
+<h3 id="bluetooth-event"><a href="../bluetooth_event/">Bluetooth Event</a></h3>
+<h3 id="calendar-event"><a href="../calendar_event/">Calendar Event</a></h3>
+<h3 id="call-active"><a href="../call_active/">Call Active</a></h3>
+<h3 id="call-ended"><a href="../call_ended/">Call Ended</a></h3>
+<h3 id="call-incoming"><a href="../call_incoming/">Call Incoming</a></h3>
+<h3 id="call-missed"><a href="../call_missed/">Call Missed</a></h3>
+<h3 id="call-outgoing"><a href="../call_outgoing/">Call Outgoing</a></h3>
+<h3 id="cell-tower-change"><a href="../cell_tower_change/">Cell Tower Change</a></h3>
+<h3 id="clipboard-change"><a href="../clipboard_change/">Clipboard Change</a></h3>
+<h3 id="dark-theme-change"><a href="../dark_theme_change/">Dark Theme Change</a></h3>
+<h3 id="data-connectivity-change"><a href="../data_connectivity_change/">Data Connectivity Change</a></h3>
+<h3 id="day-of-weekmonth"><a href="../day_of_week_month/">Day of Week/Month</a></h3>
+<h3 id="daytime"><a href="../day_time/">Day/Time</a></h3>
+<h3 id="daydream-onoff"><a href="../daydream_on_off/">Daydream On/Off</a></h3>
+<h3 id="device-boot"><a href="../device_boot/">Device Boot</a></h3>
+<h3 id="device-dockedundocked"><a href="../device_docked_undocked/">Device Docked/Undocked</a></h3>
+<h3 id="device-unlocked"><a href="../device_unlocked/">Device Unlocked</a></h3>
+<h3 id="dial-phone-number"><a href="../dial_phone_number/">Dial Phone Number</a></h3>
+<h3 id="empty-trigger"><a href="../empty_trigger/">Empty Trigger</a></h3>
+<h3 id="failed-login-attempt"><a href="../failed_login_attempt/">Failed Login Attempt</a></h3>
+<h3 id="file-changed"><a href="../file_changed/">File Changed</a></h3>
+<h3 id="fingerprint-gesture"><a href="../fingerprint_gesture/">Fingerprint Gesture</a></h3>
+<h3 id="flip-device"><a href="../flip_device/">Flip Device</a></h3>
+<h3 id="floating-button"><a href="../floating_button/">Floating Button</a></h3>
+<h3 id="geofence"><a href="../geofence/">Geofence</a></h3>
+<h3 id="google-assistant"><a href="../google_assistant/">Google Assistant</a></h3>
+<h3 id="gps-enableddisabled"><a href="../gps_enabled_disabled/">GPS Enabled/Disabled</a></h3>
+<h3 id="headphones-insertremove"><a href="../headphones_insert_remove/">Headphones Insert/Remove</a></h3>
+<h3 id="home-button-long-press"><a href="../home_button_long_press/">Home Button Long Press</a></h3>
+<h3 id="hotspot-enableddisabled"><a href="../hotspot_enabled_disabled/">Hotspot Enabled/Disabled</a></h3>
+<h3 id="http-server-request"><a href="../http_server_request/">HTTP Server Request</a></h3>
+<h3 id="intent-received"><a href="../intent_received/">Intent Received</a></h3>
+<h3 id="ip-address-change"><a href="../ip_address_change/">Ip Address Change</a></h3>
+<h3 id="light-sensor"><a href="../light_sensor/">Light Sensor</a></h3>
+<h3 id="logcat-message"><a href="../logcat_message/">Logcat Message</a></h3>
+<h3 id="macro-enabled"><a href="../macro_enabled/">Macro Enabled</a></h3>
+<h3 id="macro-finished"><a href="../macro_finished/">Macro Finished</a></h3>
+<h3 id="macrodroid-drawer-openclosed"><a href="../macrodroid_drawer_open_closed/">MacroDroid Drawer Open/Closed</a></h3>
+<h3 id="macrodroid-icon-long-press-shortcut"><a href="../macrodroid_icon_long_press_shortcut/">MacroDroid Icon Long Press Shortcut</a></h3>
+<h3 id="macrodroid-initialised"><a href="../macrodroid_initialised/">MacroDroid Initialised</a></h3>
+<h3 id="macrodroid-mode-changed"><a href="../macrodroid_mode_changed/">MacroDroid Mode Changed</a></h3>
+<h3 id="macrodroid-variable-change"><a href="../macrodroid_variable_change/">MacroDroid Variable Change</a></h3>
+<h3 id="media-button-pressed"><a href="../media_button_pressed/">Media Button Pressed</a></h3>
+<h3 id="media-button-v2"><a href="../media_button_v2/">Media Button V2</a></h3>
+<h3 id="media-track-change"><a href="../media_track_change/">Media Track Change</a></h3>
+<h3 id="mobile-service-status"><a href="../mobile_service_status/">Mobile Service Status</a></h3>
+<h3 id="musicsound-playing"><a href="../music_sound_playing/">Music/Sound Playing</a></h3>
+<h3 id="nfc-enabled-state"><a href="../nfc_enabled_state/">NFC Enabled State</a></h3>
+<h3 id="nfc-tag"><a href="../nfc_tag/">NFC Tag</a></h3>
+<h3 id="notification"><a href="../notification/">Notification</a></h3>
+<h3 id="notification-bar-button"><a href="../notification_bar_button/">Notification Bar Button</a></h3>
+<h3 id="photo-taken"><a href="../photo_taken/">Photo Taken</a></h3>
+<h3 id="popup-message"><a href="../popup_message/">PopUp Message</a></h3>
+<h3 id="power-button-long-press"><a href="../power_button_long_press/">Power Button Long Press</a></h3>
+<h3 id="power-button-toggle"><a href="../power_button_toggle/">Power Button Toggle</a></h3>
+<h3 id="power-connecteddisconnected"><a href="../power_connected_disconnected/">Power Connected/Disconnected</a></h3>
+<h3 id="priority-modedo-not-disturb"><a href="../priority_mode_do_not_disturb/">Priority Mode/Do Not Disturb</a></h3>
+<h3 id="proximity-sensor"><a href="../proximity_sensor/">Proximity Sensor</a></h3>
+<h3 id="quick-settings-tile"><a href="../quick_settings_tile/">Quick Settings Tile</a></h3>
+<h3 id="regular-interval"><a href="../regular_interval/">Regular Interval</a></h3>
+<h3 id="roaming-startedstopped"><a href="../roaming_started_stopped/">Roaming Started/Stopped</a></h3>
+<h3 id="screen-content"><a href="../screen_content/">Screen Content</a></h3>
+<h3 id="screen-onoff"><a href="../screen_on_off/">Screen On/Off</a></h3>
+<h3 id="screen-orientation"><a href="../screen_orientation/">Screen Orientation</a></h3>
+<h3 id="screenshot-content"><a href="../screenshot_content/">Screenshot Content</a></h3>
+<h3 id="shake-device"><a href="../shake_device/">Shake Device</a></h3>
+<h3 id="shortcut-launched"><a href="../shortcut_launched/">Shortcut Launched</a></h3>
+<h3 id="silent-mode-enableddisabled"><a href="../silent_mode_enabled_disabled/">Silent Mode Enabled/Disabled</a></h3>
+<h3 id="sim-card-change"><a href="../sim_card_change/">SIM Card Change</a></h3>
+<h3 id="sleep"><a href="../sleep/">Sleep</a></h3>
+<h3 id="sms-received"><a href="../sms_received/">SMS Received</a></h3>
+<h3 id="sms-sent"><a href="../sms_sent/">SMS Sent</a></h3>
+<h3 id="spotify"><a href="../spotify/">Spotify</a></h3>
+<h3 id="stopwatch"><a href="../stopwatch/">Stopwatch</a></h3>
+<h3 id="sunsetsunrise"><a href="../sunset_sunrise/">Sunset/Sunrise</a></h3>
+<h3 id="swipe-screen"><a href="../swipe_screen/">Swipe Screen</a></h3>
+<h3 id="system-log-entry"><a href="../system_log_entry/">System Log Entry</a></h3>
+<h3 id="system-setting-change"><a href="../system_setting_change/">System Setting Change</a></h3>
+<h3 id="taskerlocale-plugin"><a href="../tasker_locale_plugin/">Tasker/Locale Plugin</a></h3>
+<h3 id="text-shared-to-macrodroid"><a href="../text_shared_to_macrodroid/">Text Shared to MacroDroid</a></h3>
+<h3 id="ui-click"><a href="../ui_click/">UI Click</a></h3>
+<h3 id="usb-device-connectdisconnect"><a href="../usb_device_connect_disconnect/">USB Device Connect/Disconnect</a></h3>
+<h3 id="volume-button-pressed"><a href="../volume_button_pressed/">Volume Button Pressed</a></h3>
+<h3 id="volume-button-long-press"><a href="../volume_button_long_press/">Volume Button Long Press</a></h3>
+<h3 id="vpn-state-change"><a href="../vpn_state_change/">VPN State Change</a></h3>
+<h3 id="wear-os-complication-click"><a href="../wear_os_complication_click/">Wear OS Complication Click</a></h3>
+<h3 id="weather"><a href="../weather/">Weather</a></h3>
+<h3 id="webhook-url"><a href="../webhook_url/">Webhook URL</a></h3>
+<h3 id="widget-button"><a href="../widget_button/">Widget Button</a></h3>
+<h3 id="wifi-ssid-transition"><a href="../wifi_ssid_transition/">Wifi SSID Transition</a></h3>
+<h3 id="wifi-state-change"><a href="../wifi_state_change/">Wifi State Change</a></h3>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2025 01:47:28 UTC">November 3, 2025</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>
