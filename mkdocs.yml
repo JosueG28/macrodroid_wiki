@@ -96,6 +96,10 @@ plugins:
                 - 📄 Variable list: variables/variable_list.md
             - 📁 Action Blocks:
                 - 📄 About action blocks: action_blocks/about_action_blocks.md
+            - 📁 Magic text:
+                - 📄 About magic text: magic_text/about_magic_text.md
+                - 📄 Requires trigger: magic_text/requires_trigger.md
+                - 📄 No trigger required: magic_text/no_trigger_required.md
             
         # Configuración del Idioma Secundario (Español) / Secondary Language Configuration (Spanish)
         - locale: es
@@ -125,6 +129,10 @@ plugins:
                   - 📄 Acerca de los Bloques de Accion: action_blocks/about_action_blocks.md
             - 📁 Cronómetros:
                   - 📄 Acerca de los cronómetros: stopwatches/about_stopwatches.md
+            - 📁 Texto mágico:
+                  - 📄 Acerca del texto mágico: magic_text/about_magic_text.md
+                  - 📄 Requiere disparador: magic_text/requires_trigger.md
+                  - 📄 No requiere disparador: magic_text/no_trigger_required.md
 
   - git-revision-date-localized:
       type: date # Muestra la fecha de última modificación / Shows the last modification date
