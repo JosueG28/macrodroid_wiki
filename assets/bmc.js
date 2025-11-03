@@ -1,32 +1,30 @@
-// assets/bmc_pulse.js
-var pulseBtn = document.createElement('a');
-pulseBtn.href = "https://www.buymeacoffee.com/josueg28";
-pulseBtn.target = "_blank";
-pulseBtn.rel = "noopener";
-pulseBtn.innerText = "☕ Buy Me a Coffee";
+// assets/bmc_endpage.js
+var endBtn = document.createElement('a');
+endBtn.href = "https://www.buymeacoffee.com/josueg28";
+endBtn.target = "_blank";
+endBtn.rel = "noopener";
+endBtn.innerText = "☕ Buy Me a Coffee";
 
-pulseBtn.style.position = "fixed";
-pulseBtn.style.bottom = "20px";
-pulseBtn.style.right = "20px";
-pulseBtn.style.background = "#FFDD00";
-pulseBtn.style.color = "#000";
-pulseBtn.style.fontWeight = "bold";
-pulseBtn.style.padding = "12px 18px";
-pulseBtn.style.borderRadius = "25px";
-pulseBtn.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
-pulseBtn.style.textDecoration = "none";
-pulseBtn.style.zIndex = "9999";
-pulseBtn.style.fontFamily = "Inter, sans-serif";
-pulseBtn.style.animation = "pulse 2s infinite";
+endBtn.style.position = "fixed";
+endBtn.style.bottom = "20px";
+endBtn.style.right = "20px";
+endBtn.style.background = "#FFDD00";
+endBtn.style.color = "#000";
+endBtn.style.fontWeight = "bold";
+endBtn.style.padding = "12px 18px";
+endBtn.style.borderRadius = "25px";
+endBtn.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+endBtn.style.textDecoration = "none";
+endBtn.style.zIndex = "9999";
+endBtn.style.fontFamily = "Inter, sans-serif";
+endBtn.style.display = "none"; // oculto hasta final de página
 
-// Pulso CSS
-var style = document.createElement('style');
-style.innerHTML = `
-@keyframes pulse {
-  0% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.2);}
-  50% { transform: scale(1.1); box-shadow: 0 6px 12px rgba(0,0,0,0.3);}
-  100% { transform: scale(1); box-shadow: 0 4px 8px rgba(0,0,0,0.2);}
-}`;
-document.head.appendChild(style);
+window.addEventListener('scroll', function() {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+    endBtn.style.display = "block";
+  } else {
+    endBtn.style.display = "none";
+  }
+});
 
-document.body.appendChild(pulseBtn);
+document.body.appendChild(endBtn);
