@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#triggers-starting-the-automation" class="md-skip">
+        <a href="#disparadores-el-inicio-de-la-automatizacion" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -382,7 +382,7 @@
         <li class="md-nav__item">
   <a href="#what_is_a_trigger" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is a Trigger?
+      ¿Qué es un Disparador?
     </span>
   </a>
   
@@ -391,7 +391,7 @@
         <li class="md-nav__item">
   <a href="#how_triggers_work" class="md-nav__link">
     <span class="md-ellipsis">
-      How Triggers Work
+      Cómo funcionan los Disparadores
     </span>
   </a>
   
@@ -400,7 +400,7 @@
         <li class="md-nav__item">
   <a href="#single_vs_multiple" class="md-nav__link">
     <span class="md-ellipsis">
-      Single vs. Multiple Triggers
+      Disparador único vs. múltiples disparadores
     </span>
   </a>
   
@@ -1088,7 +1088,7 @@
         <li class="md-nav__item">
   <a href="#what_is_a_trigger" class="md-nav__link">
     <span class="md-ellipsis">
-      What Is a Trigger?
+      ¿Qué es un Disparador?
     </span>
   </a>
   
@@ -1097,7 +1097,7 @@
         <li class="md-nav__item">
   <a href="#how_triggers_work" class="md-nav__link">
     <span class="md-ellipsis">
-      How Triggers Work
+      Cómo funcionan los Disparadores
     </span>
   </a>
   
@@ -1106,7 +1106,7 @@
         <li class="md-nav__item">
   <a href="#single_vs_multiple" class="md-nav__link">
     <span class="md-ellipsis">
-      Single vs. Multiple Triggers
+      Disparador único vs. múltiples disparadores
     </span>
   </a>
   
@@ -1128,53 +1128,53 @@
 
 
 
-<h1 id="triggers-starting-the-automation"><strong>Triggers: Starting the Automation</strong></h1>
-<p>The core function of <strong>MacroDroid</strong> is to automate tasks on your device — and everything begins with a <strong>Trigger</strong>.<br />
-A Trigger is essentially the <strong>“cause”</strong> or <strong>“event”</strong> that signals MacroDroid to start a <strong>Macro</strong>.</p>
+<h1 id="disparadores-el-inicio-de-la-automatizacion"><strong>Disparadores: El inicio de la automatización</strong></h1>
+<p>La función principal de <strong>MacroDroid</strong> es automatizar tareas en tu dispositivo — y todo comienza con un <strong>Disparador</strong>.<br />
+Un Disparador es, esencialmente, la <strong>“causa”</strong> o <strong>“evento”</strong> que le indica a MacroDroid cuándo iniciar un <strong>Macro</strong>.</p>
 <hr />
-<h2 id="what_is_a_trigger">What Is a Trigger?</h2>
-<p>A <strong>trigger</strong> is an event your device listens for. When that event happens, and the macro is enabled, the actions you defined will run.<br />
-Every macro must have <strong>at least one trigger</strong> — without it, your macro will never start.</p>
-<p><strong>Example:</strong><br />
-- Trigger: <code>Charger Connected</code><br />
-- Actions: <code>Show Notification: Charging Started</code></p>
-<p>If you're new to MacroDroid, think of triggers as the <strong>"WHEN"</strong> part of your automation:  </p>
+<h2 id="what_is_a_trigger">¿Qué es un Disparador?</h2>
+<p>Un <strong>disparador</strong> es un evento que tu dispositivo detecta. Cuando ese evento ocurre, y el macro está habilitado, las acciones que definiste se ejecutan.<br />
+Cada macro debe tener <strong>al menos un disparador</strong> — sin él, tu macro nunca se iniciará.</p>
+<p><strong>Ejemplo:</strong><br />
+- Disparador: <code>Cargador conectado</code><br />
+- Acciones: <code>Mostrar notificación: Carga iniciada</code></p>
+<p>Si eres nuevo en MacroDroid, piensa en los disparadores como la parte del <strong>"CUÁNDO"</strong> de tu automatización:  </p>
 <blockquote>
-<p>“When this happens, do that.”  </p>
+<p>“Cuando esto ocurra, haz aquello.”</p>
 </blockquote>
-<p><a href="../trigger_list/"><strong>📜 Go to the full trigger list →</strong></a></p>
+<p><a href="../trigger_list/"><strong>📜 Ir a la lista completa de disparadores →</strong></a></p>
 <hr />
-<h2 id="how_triggers_work">How Triggers Work</h2>
-<p>Triggers are continuously monitored by MacroDroid in the background. They operate based on <strong>state changes</strong> or <strong>specific events</strong> occurring on your Android device.</p>
+<h2 id="how_triggers_work">Cómo funcionan los Disparadores</h2>
+<p>Los disparadores son monitoreados continuamente por MacroDroid en segundo plano. Funcionan con base en <strong>cambios de estado</strong> o <strong>eventos específicos</strong> que ocurren en tu dispositivo Android.</p>
 <ol>
-<li><strong>Event Occurrence:</strong> An event happens on your phone (e.g., you plug in the charger, open an app, or reach a specific time).  </li>
-<li><strong>MacroDroid Detection:</strong> MacroDroid detects this event through the configured <strong>Trigger</strong>.  </li>
-<li><strong>Macro Initiation:</strong> Once the Trigger condition is met, MacroDroid <strong>initiates</strong> the Macro.</li>
+<li><strong>Ocurre un evento:</strong> Sucede algo en tu teléfono (por ejemplo, conectas el cargador, abres una app o llega una hora específica).  </li>
+<li><strong>MacroDroid lo detecta:</strong> MacroDroid reconoce este evento a través del <strong>Disparador</strong> configurado.  </li>
+<li><strong>Se inicia el Macro:</strong> Una vez que se cumple la condición del disparador, MacroDroid <strong>inicia</strong> el macro.</li>
 </ol>
 <hr />
-<h2 id="single_vs_multiple">Single vs. Multiple Triggers</h2>
-<p>A Macro can be configured to run with one or more triggers:</p>
+<h2 id="single_vs_multiple">Disparador único vs. múltiples disparadores</h2>
+<p>Un Macro puede configurarse para ejecutarse con uno o varios disparadores:</p>
 <ul>
 <li>
-<p><strong>Single Trigger:</strong><br />
-  The macro runs when that specific event occurs.</p>
+<p><strong>Disparador único:</strong><br />
+  El macro se ejecuta cuando ocurre ese evento específico.</p>
 </li>
 <li>
-<p><strong>Multiple Triggers:</strong><br />
-  The macro runs when <strong>any</strong> of the listed triggers occur — as long as no <strong>Constraint</strong> prevents it.</p>
+<p><strong>Múltiples disparadores:</strong><br />
+  El macro se ejecuta cuando <strong>cualquiera</strong> de los disparadores listados ocurre — siempre y cuando ninguna <strong>Restricción</strong> lo impida.</p>
 </li>
 </ul>
-<p><strong>Note:</strong><br />
-Triggers cannot be combined using <strong>AND logic</strong> (e.g., “Charger Connected AND Headphones Plugged”) because they are instant events — only one can start the macro at a time.</p>
-<p><strong>Workaround:</strong><br />
-Use <strong>constraints</strong> to limit when a trigger is allowed to fire.</p>
-<p><strong>Example:</strong><br />
-- Trigger: <code>Charger Connected</code><br />
-- Constraint: <code>Time of Day: 8:00 AM – 10:00 PM</code><br />
-➡ The macro will only run during those hours.</p>
+<p><strong>Nota:</strong><br />
+Los disparadores no pueden combinarse usando lógica <strong>AND</strong> (por ejemplo, “Cargador conectado Y Audífonos conectados”), porque son eventos instantáneos — solo uno puede iniciar el macro a la vez.</p>
+<p><strong>Alternativa:</strong><br />
+Usa <strong>restricciones</strong> para controlar cuándo se permite que un disparador se active.</p>
+<p><strong>Ejemplo:</strong><br />
+- Disparador: <code>Cargador conectado</code><br />
+- Restricción: <code>Hora del día: 8:00 AM – 10:00 PM</code><br />
+➡ El macro solo se ejecutará durante esas horas.</p>
 <hr />
-<p>Triggers are the <strong>starting point of every MacroDroid automation</strong>.<br />
-Mastering them is key to building powerful and efficient macros — start small, experiment, and soon you’ll automate your Android like a pro.</p>
+<p>Los disparadores son el <strong>punto de inicio de toda automatización en MacroDroid</strong>.<br />
+Dominar su uso es clave para crear macros potentes y eficientes — comienza con algo sencillo, experimenta, y pronto estarás automatizando tu Android como un profesional.</p>
 
 
 

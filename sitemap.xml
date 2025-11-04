@@ -1946,10 +1946,4 @@
         <xhtml:link rel="alternate" hreflang="es" href="Nonees/variables/variable_list/"/>
         <xhtml:link rel="alternate" hreflang="en" href="Nonevariables/variable_list/"/>
     </url>
-    <url>
-        <loc>Nonees/triggers/about_actions/</loc>
-        <lastmod>2025-11-04</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="es" href="Nonees/triggers/about_actions/"/>
-    </url>
 </urlset>
