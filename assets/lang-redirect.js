@@ -56,6 +56,8 @@
   }
 })();
 
+
+
 // --- PRESERVAR HASH EN CAMBIOS DE IDIOMA ---
 (function() {
   // Esperar a que el DOM cargue
@@ -66,31 +68,35 @@
   }
 
   function initLangHashPreserve() {
-    // Buscar el selector de idioma (clase precisa de Material)
-    let langSelect = document.querySelector('.md-select__input');
-    
-    // Fallback si no lo encuentra: cualquier <select> en las opciones del header
-    if (!langSelect) {
-      langSelect = document.querySelector('.md-header__options select');
-    }
-    
-    if (!langSelect) {
-      console.warn('Selector de idioma no encontrado'); // Para depuración
+    // Buscar el contenedor del dropdown de idioma
+    const langDropdown = document.querySelector('.md-select');
+    if (!langDropdown) {
+      console.warn('Dropdown de idioma no encontrado'); // Para depuración
       return;
     }
 
-    console.log('Selector de idioma encontrado y listener agregado'); // Para depuración
+    console.log('Dropdown de idioma encontrado y listener agregado'); // Para depuración
 
-    langSelect.addEventListener('change', function(event) {
+    // Adjuntar listener a los enlaces de idioma (pueden aparecer dinámicamente al abrir)
+    langDropdown.addEventListener('click', function(event) {
+      // Verificar si el clic es en un enlace de cambio de idioma
+      const link = event.target.closest('.md-select__link');
+      if (!link) return; // No es un enlace de idioma, ignorar
+
       event.preventDefault(); // Prevenir navegación por defecto
       
       const currentHash = window.location.hash || ''; // Captura #secure_variable o vacío
-      const targetUrl = this.value; // El value del option (ej. /macrodroid_wiki/variables/about_variables/)
+      const targetUrl = link.getAttribute('href'); // El href del enlace (ej. /macrodroid_wiki/variables/about_variables/)
       
-      // Construir URL completa con hash
-      const fullUrl = targetUrl + currentHash;
+      // Construir URL completa con hash (asegura que no haya / duplicado al final)
+      let fullUrl = targetUrl;
+      if (targetUrl.endsWith('/') && currentHash) {
+        fullUrl = targetUrl.slice(0, -1) + currentHash; // Quita / final antes de agregar #
+      } else {
+        fullUrl += currentHash;
+      }
       
-      console.log('Cambiando a:', fullUrl); // Para depuración: verifica en consola si se ejecuta
+      console.log('Cambiando a:', fullUrl); // Para depuración: verifica en consola
       
       // Navegar (replace para no ensuciar historial)
       window.location.replace(fullUrl);
