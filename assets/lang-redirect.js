@@ -55,3 +55,31 @@
     console.error('lang-redirect error:', e);
   }
 })();
+
+
+// --- PRESERVAR HASH EN CAMBIOS DE IDIOMA ---
+(function() {
+  // Esperar a que el DOM cargue
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLangHashPreserve);
+  } else {
+    initLangHashPreserve();
+  }
+
+  function initLangHashPreserve() {
+    // Buscar el selector de idioma (clase estándar de Material)
+    const langSelect = document.querySelector('.md-header__option select');
+    if (!langSelect) return; // No hay selector, salir
+
+    langSelect.addEventListener('change', function(event) {
+      const currentHash = window.location.hash || ''; // Captura #string o vacío
+      const targetUrl = this.value; // El value del option (ej. /macrodroid_wiki/variables/about_variables/)
+      
+      // Construir URL completa con hash
+      const fullUrl = targetUrl + currentHash;
+      
+      // Navegar (usa replace para no ensuciar historial, o assign si prefieres push)
+      window.location.replace(fullUrl);
+    });
+  }
+})();
