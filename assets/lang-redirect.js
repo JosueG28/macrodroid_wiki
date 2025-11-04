@@ -56,7 +56,6 @@
   }
 })();
 
-
 // --- PRESERVAR HASH EN CAMBIOS DE IDIOMA ---
 (function() {
   // Esperar a que el DOM cargue
@@ -67,18 +66,33 @@
   }
 
   function initLangHashPreserve() {
-    // Buscar el selector de idioma (clase estándar de Material)
-    const langSelect = document.querySelector('.md-header__option select');
-    if (!langSelect) return; // No hay selector, salir
+    // Buscar el selector de idioma (clase precisa de Material)
+    let langSelect = document.querySelector('.md-select__input');
+    
+    // Fallback si no lo encuentra: cualquier <select> en las opciones del header
+    if (!langSelect) {
+      langSelect = document.querySelector('.md-header__options select');
+    }
+    
+    if (!langSelect) {
+      console.warn('Selector de idioma no encontrado'); // Para depuración
+      return;
+    }
+
+    console.log('Selector de idioma encontrado y listener agregado'); // Para depuración
 
     langSelect.addEventListener('change', function(event) {
-      const currentHash = window.location.hash || ''; // Captura #string o vacío
+      event.preventDefault(); // Prevenir navegación por defecto
+      
+      const currentHash = window.location.hash || ''; // Captura #secure_variable o vacío
       const targetUrl = this.value; // El value del option (ej. /macrodroid_wiki/variables/about_variables/)
       
       // Construir URL completa con hash
       const fullUrl = targetUrl + currentHash;
       
-      // Navegar (usa replace para no ensuciar historial, o assign si prefieres push)
+      console.log('Cambiando a:', fullUrl); // Para depuración: verifica en consola si se ejecuta
+      
+      // Navegar (replace para no ensuciar historial)
       window.location.replace(fullUrl);
     });
   }
