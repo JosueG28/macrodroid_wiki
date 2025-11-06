@@ -1,42 +1,128 @@
-// docs/assets/bmc.js
-document.addEventListener("DOMContentLoaded", function () {
-  // Crear el enlace
-  const link = document.createElement("a");
-  link.href = "https://www.buymeacoffee.com/josueg28";
-  link.target = "_blank";
-  link.rel = "noopener";
-  link.title = "Buy me a coffee - Support my work!";
+// ☕ BOTÓN BUY ME A COFFEE ULTRA CHINGÓN - LOGO OFICIAL SVG VIA IMG
+(() => {
+    // Carga font Inter de Google Fonts (solo si no está)
+    if (!document.querySelector('link[href*="inter.googleapis"]')) {
+        const fontLink = document.createElement('link');
+        fontLink.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap';
+        fontLink.rel = 'stylesheet';
+        document.head.appendChild(fontLink);
+    }
 
-  // Crear el contenedor
-  const container = document.createElement("div");
-  container.style.position = "fixed";
-  container.style.bottom = "20px";
-  container.style.right = "20px";
-  container.style.zIndex = "9999";
-  container.style.transition = "all 0.2s ease";
-  container.style.cursor = "pointer";
+    const coffee = document.createElement('a');
+    coffee.href = 'https://www.buymeacoffee.com/josueg28';
+    coffee.target = '_blank';
+    coffee.rel = 'noopener';
+    coffee.title = 'Buy me a coffee! ☕';
+    coffee.setAttribute('aria-label', 'Buy me a coffee - ¡Apoya mi trabajo!');
 
-  // Inyectar SVG
-  container.innerHTML = `
-    <svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="180" height="50" rx="25" fill="#FFDD00"/>
-      <path d="M35.5 25c0-4.97-3.58-9-8-9s-8 4.03-8 9c0 4.14 2.72 7.61 6.5 8.69v2.81h3v-2.81c3.78-1.08 6.5-4.55 6.5-8.69z" fill="#FFF"/>
-      <path d="M31.5 25c0-2.21-1.12-4.14-2.83-5.28.03.08.06.16.08.25.69 2.9-.58 5.91-2.75 7.03.64.34 1.08.95 1.08 1.67 0 1.1-.9 2-2 2s-2-.9-2-2c0-.72.44-1.33 1.08-1.67-2.17-1.12-3.44-4.13-2.75-7.03.02-.09.05-.17.08-.25C19.62 20.86 18.5 22.79 18.5 25c0 3.31 2.69 6 6 6s6-2.69 6-6z" fill="#FFDD00"/>
-      <text x="55" y="31" font-family="Comic Sans MS, cursive" font-weight="bold" fill="#000" font-size="16">Buy me a coffee</text>
-    </svg>
-  `;
+    // Contenedor para logo + texto
+    const buttonContent = document.createElement('div');
+    buttonContent.style.cssText = `
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 16px;
+        gap: 8px;
+    `;
 
-  // Hover effect
-  container.addEventListener("mouseenter", () => {
-    container.style.transform = "translateY(-3px)";
-    container.style.boxShadow = "0 8px 20px rgba(0,0,0,0.2)";
-  });
-  container.addEventListener("mouseleave", () => {
-    container.style.transform = "translateY(0)";
-    container.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
-  });
+    // Logo oficial SVG (nítido, sin distorsión)
+    const logo = document.createElement('img');
+    logo.src = 'https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg';
+    logo.alt = 'Buy Me a Coffee';
+    logo.style.cssText = `
+        height: 24px;
+        width: auto;
+        flex-shrink: 0;
+        filter: brightness(0) invert(0);  /* Ajusta color si quieres (blanco/negrita para amarillo fondo) */
+    `;
 
-  // Añadir al enlace y al body
-  link.appendChild(container);
-  document.body.appendChild(link);
-});
+    // Texto en Inter
+    const text = document.createElement('span');
+    text.textContent = 'Buy me a coffee';
+    text.style.cssText = `
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        white-space: nowrap;
+        flex: 1;
+    `;
+
+    buttonContent.appendChild(logo);
+    buttonContent.appendChild(text);
+    coffee.appendChild(buttonContent);
+
+    // ESTILOS MINIMALISTAS DE LUJO
+    Object.assign(coffee.style, {
+        position: 'fixed',
+        bottom: '24px',
+        right: '24px',
+        width: '217px',
+        height: '50px',
+        background: 'linear-gradient(135deg, #FFDD00, #FFD700)',
+        borderRadius: '25px',
+        boxShadow: '0 8px 20px rgba(255, 221, 0, 0.4)',
+        zIndex: '9999',
+        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        backdropFilter: 'blur(10px)',
+        border: '3px solid rgba(255,255,255,0.3)',
+        cursor: 'pointer',
+        transform: 'translateY(0)',
+        textDecoration: 'none',
+        overflow: 'hidden',
+    });
+
+    // Responsive para móviles
+    const style = document.createElement('style');
+    style.textContent = `
+        @media (max-width: 768px) {
+            a[href*="buymeacoffee"] {
+                bottom: 16px !important;
+                right: 16px !important;
+                width: 174px !important;
+                height: 40px !important;
+            }
+            a[href*="buymeacoffee"] img { height: 20px !important; }
+            a[href*="buymeacoffee"] span { font-size: 12px !important; }
+        }
+        @media (max-width: 480px) {
+            a[href*="buymeacoffee"] {
+                width: 150px !important;
+                height: 35px !important;
+            }
+            a[href*="buymeacoffee"] img { height: 18px !important; }
+            a[href*="buymeacoffee"] span { font-size: 11px !important; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // EFECTOS DE PUTA MADRE
+    const pulse = () => {
+        coffee.style.transform = 'scale(1.05)';
+        setTimeout(() => coffee.style.transform = 'scale(1)', 300);
+    };
+
+    coffee.addEventListener('mouseenter', () => {
+        coffee.style.transform = 'scale(1.05) translateY(-2px)';
+        coffee.style.boxShadow = '0 12px 30px rgba(255, 221, 0, 0.6)';
+        logo.style.filter = 'brightness(0) invert(0.2)';  // Sutil cambio en hover
+    });
+
+    coffee.addEventListener('mouseleave', () => {
+        coffee.style.transform = 'scale(1) translateY(0)';
+        coffee.style.boxShadow = '0 8px 20px rgba(255, 221, 0, 0.4)';
+        logo.style.filter = 'brightness(0) invert(0)';
+    });
+
+    // Pulso cada 8s
+    setInterval(pulse, 8000);
+    setTimeout(pulse, 2000);
+
+    // Añadir al DOM
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => document.body.appendChild(coffee));
+    } else {
+        document.body.appendChild(coffee);
+    }
+})();

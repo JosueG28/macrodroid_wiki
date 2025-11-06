@@ -52,7 +52,25 @@
 }
 
 
-/* Opcional: mejora visual */
-#bmc-container svg {
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+
+/* Estilos personalizados para el botón de Buy Me a Coffee */
+
+/* Aplica el color amarillo de BMC al botón en modo claro/automático */
+[data-md-color-scheme="default"] .bmc-button,
+[data-md-color-scheme="preference"] .bmc-button {
+    background-color: #FFDD00 !important; /* Amarillo de BMC */
+    color: #000000 !important;           /* Texto negro */
+}
+
+/* Ajuste para el modo oscuro (esquema slate) */
+[data-md-color-scheme="slate"] .bmc-button {
+    background-color: #FFDD00 !important; /* Amarillo de BMC */
+    color: #000000 !important;           /* Texto negro */
+    /* Asegura que no se apliquen otros estilos del modo oscuro */
+    border: none;
+}
+
+/* Cambia el color del ícono (svg) dentro del botón */
+.bmc-button .twemoji svg {
+    fill: #000000 !important;
 }
