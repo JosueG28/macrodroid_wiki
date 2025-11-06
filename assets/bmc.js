@@ -1,4 +1,4 @@
-// ☕ BOTÓN BUY ME A COFFEE ULTRA CHINGÓN - ANIMACIONES PERROÑAS
+// ☕ BOTÓN BUY ME A COFFEE ULTRA CHINGÓN - ANIMACIONES PERROÑAS (FIX TOUCH ANDROID)
 (() => {
     // Carga font Inter de Google Fonts (solo si no está)
     if (!document.querySelector('link[href*="inter.googleapis"]')) {
@@ -55,7 +55,7 @@
     buttonContent.appendChild(text);
     coffee.appendChild(buttonContent);
 
-    // ESTILOS MINIMALISTAS DE LUJO (con animaciones base)
+    // ESTILOS MINIMALISTAS DE LUJO (sin backdrop-filter para fix touch)
     Object.assign(coffee.style, {
         position: 'fixed',
         bottom: '24px',
@@ -68,18 +68,20 @@
         boxShadow: '0 8px 20px rgba(255, 221, 0, 0.4)',
         zIndex: '9999',
         transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
-        backdropFilter: 'blur(10px)',
         border: '3px solid rgba(255,255,255,0.3)',
         cursor: 'pointer',
         transform: 'translateY(0)',
         textDecoration: 'none',
         overflow: 'hidden',
-        animation: 'float 3s ease-in-out infinite, entrance 0.6s ease-out forwards',  // Bobble + entrada
-        opacity: '0',  // Para la animación de entrada
+        animation: 'float 3s ease-in-out infinite, entrance 0.6s ease-out forwards',
+        opacity: '0',
         transformOrigin: 'center bottom',
+        touchAction: 'manipulation',  // Fix clave para taps en Android
+        pointerEvents: 'auto',       // Asegura clics/taps
+        userSelect: 'none',          // Evita selección accidental en touch
     });
 
-    // CSS con keyframes perrones
+    // CSS con keyframes perrones (shine simplificado sin ::before para no joder touch)
     const style = document.createElement('style');
     style.textContent = `
         @keyframes float {
@@ -91,23 +93,22 @@
             100% { opacity: 1; transform: scale(1) translateY(0); }
         }
         @keyframes shine {
-            0% { box-shadow: inset 0 -100px 0 rgba(255,255,255,0.3); }
-            100% { box-shadow: inset 200px -100px 0 rgba(255,255,255,0.3); }
+            0% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+            100% { filter: brightness(1); }
         }
         @keyframes pulseRotate {
             0%, 100% { transform: scale(1) rotate(0deg); }
             50% { transform: scale(1.05) rotate(2deg); }
         }
-        a[href*="buymeacoffee"] { width: auto !important; min-width: 180px !important; }
-        a[href*="buymeacoffee"]:hover::before {  /* Shine sweep en hover */
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            animation: shine 0.6s ease-in-out;
+        a[href*="buymeacoffee"] {
+            width: auto !important;
+            min-width: 180px !important;
+            touch-action: manipulation !important;  /* Fix global para touch */
+            -webkit-tap-highlight-color: transparent;  /* Quita el highlight azul en Android */
+        }
+        a[href*="buymeacoffee"]:active {  /* Feedback táctil en tap */
+            transform: scale(0.98) !important;
         }
         @media (max-width: 768px) {
             a[href*="buymeacoffee"] {
@@ -115,7 +116,7 @@
                 right: 16px !important;
                 max-width: 174px !important;
                 height: 40px !important;
-                animation-duration: 2.5s, 0.5s;  /* Más rápido en móvil */
+                animation-duration: 2.5s, 0.5s;
             }
             a[href*="buymeacoffee"] img { height: 20px !important; }
             a[href*="buymeacoffee"] span { font-size: 12px !important; }
@@ -132,15 +133,21 @@
             a[href*="buymeacoffee"] span { font-size: 11px !important; }
             a[href*="buymeacoffee"] div { padding: 10px 8px !important; gap: 4px !important; }
         }
+        /* Shine en hover solo para desktop, no interfiere en touch */
+        @media (hover: hover) {
+            a[href*="buymeacoffee"]:hover {
+                animation: shine 0.6s ease-in-out;
+            }
+        }
     `;
     document.head.appendChild(style);
 
-    // EFECTOS DE PUTA MADRE (upgraded)
+    // EFECTOS DE PUTA MADRE (simplificados para no bloquear touch)
     const pulse = () => {
-        coffee.style.animation = 'none';  // Pausa float temporal
+        coffee.style.animation = 'none';
         coffee.style.transform = 'scale(1.05) rotate(1deg)';
-        logo.style.transform = 'rotate(-1deg)';  // Logo gira opuesto
-        text.style.transform = 'rotate(1deg)';   // Texto gira con botón
+        logo.style.transform = 'rotate(-1deg)';
+        text.style.transform = 'rotate(1deg)';
         setTimeout(() => {
             coffee.style.transform = 'scale(1) rotate(0deg)';
             coffee.style.animation = 'float 3s ease-in-out infinite, entrance 0.6s ease-out forwards';
@@ -150,24 +157,36 @@
     };
 
     coffee.addEventListener('mouseenter', () => {
-        coffee.style.transform = 'scale(1.05) translateY(-2px) rotate(0.5deg)';
-        coffee.style.boxShadow = '0 12px 30px rgba(255, 221, 0, 0.6)';
-        logo.style.transform = 'rotate(-0.5deg) scale(1.1)';
-        logo.style.filter = 'brightness(0) invert(0.2)';
-        // Trigger shine
-        coffee.style.position = 'relative';  // Para ::before
+        if (window.matchMedia('(hover: hover)').matches) {  // Solo en desktop
+            coffee.style.transform = 'scale(1.05) translateY(-2px) rotate(0.5deg)';
+            coffee.style.boxShadow = '0 12px 30px rgba(255, 221, 0, 0.6)';
+            logo.style.transform = 'rotate(-0.5deg) scale(1.1)';
+            logo.style.filter = 'brightness(0) invert(0.2)';
+        }
     });
 
     coffee.addEventListener('mouseleave', () => {
-        coffee.style.transform = 'scale(1) translateY(0) rotate(0deg)';
-        coffee.style.boxShadow = '0 8px 20px rgba(255, 221, 0, 0.4)';
-        logo.style.transform = 'rotate(0deg) scale(1)';
-        logo.style.filter = 'brightness(0) invert(0)';
+        if (window.matchMedia('(hover: hover)').matches) {
+            coffee.style.transform = 'scale(1) translateY(0) rotate(0deg)';
+            coffee.style.boxShadow = '0 8px 20px rgba(255, 221, 0, 0.4)';
+            logo.style.transform = 'rotate(0deg) scale(1)';
+            logo.style.filter = 'brightness(0) invert(0)';
+        }
     });
 
-    // Pulso cada 6s (más frecuente para más acción)
+    // Evento touch extra para feedback en Android
+    coffee.addEventListener('touchstart', (e) => {
+        e.preventDefault();  // Evita scroll accidental
+        coffee.style.transform = 'scale(0.98)';
+    }, { passive: false });
+
+    coffee.addEventListener('touchend', () => {
+        coffee.style.transform = 'scale(1)';
+    });
+
+    // Pulso cada 6s
     setInterval(pulse, 6000);
-    setTimeout(pulse, 1500);  // Primer pulso más pronto
+    setTimeout(pulse, 1500);
 
     // Añadir al DOM
     if (document.readyState === 'loading') {
