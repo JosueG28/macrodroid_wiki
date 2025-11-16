@@ -693,6 +693,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-disabling-logging-for-specific-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Advanced: Disabling Logging for Specific Macros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pro-tips" class="md-nav__link">
     <span class="md-ellipsis">
       💡 Pro Tips
@@ -1144,6 +1153,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-disabling-logging-for-specific-macros" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Advanced: Disabling Logging for Specific Macros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pro-tips" class="md-nav__link">
     <span class="md-ellipsis">
       💡 Pro Tips
@@ -1258,11 +1276,22 @@ It is essential for troubleshooting and understanding how your automations work.
 </tbody>
 </table>
 <hr />
+<h2 id="advanced-disabling-logging-for-specific-macros">⚙️ Advanced: Disabling Logging for Specific Macros</h2>
+<p>To prevent the log from becoming cluttered with repetitive entries from high-frequency macros (e.g., one that checks battery every minute), you can disable logging entirely for individual macros:</p>
+<ol>
+<li>Open the macro for editing.</li>
+<li>In the macro editor, tap the <strong>⋮ (3 dots)</strong> menu in the upper right corner.</li>
+<li>Look for the <strong>"Allow logging"</strong> toggle and disable it (uncheck) to stop all entries from that macro.</li>
+</ol>
+<p>Additionally, in the same menu, you can select <strong>"Show log"</strong> to view only the log entries for this specific macro.</p>
+<p>This keeps your log focused on important events without affecting the macro's functionality. Re-enable "Allow logging" when debugging that specific macro.</p>
+<hr />
 <h2 id="pro-tips">💡 Pro Tips</h2>
 <ol>
 <li><strong>Debugging</strong>: When a macro misbehaves, check the log to see where it failed  </li>
 <li><strong>Timestamp</strong>: All entries include the exact execution time  </li>
 <li><strong>Color Coding</strong>: Errors (purple), Warnings (orange)  </li>
+<li><strong>Avoid Clutter</strong>: Use per-macro disabling for frequent automations to maintain a clean, useful log  </li>
 </ol>
 <blockquote>
 <p>The log automatically scrolls to show the latest entries – perfect for real-time monitoring!</p>
