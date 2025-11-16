@@ -5,7 +5,7 @@ Es esencial para solucionar problemas y entender cómo funcionan tus automatizac
 
 ---
 
-## 📚 ¿Qué se Registra?
+## 📚 ¿Qué se Registra? {#what_gets_recorded}
 
 - Activaciones de disparadores (p. ej., "WiFi conectado")  
 - Acciones realizadas (p. ej., "Notificación enviada")  
@@ -16,7 +16,7 @@ Es esencial para solucionar problemas y entender cómo funcionan tus automatizac
 
 ---
 
-## 🔢 Niveles del Registro
+## 🔢 Niveles del Registro {#log_levels}
 
 MacroDroid categoriza las entradas según su importancia:
 
@@ -29,7 +29,7 @@ MacroDroid categoriza las entradas según su importancia:
 
 ---
 
-## 🔍 Filtrado del Registro
+## 🔍 Filtrado del Registro  {#filtering_the_log}
 
 Toca el **icono de filtro** (arriba a la derecha) para reducir los resultados:
 
@@ -46,7 +46,7 @@ Toca el **icono de filtro** (arriba a la derecha) para reducir los resultados:
 
 ---
 
-## 📤 Opciones de Exportación y Gestión
+## 📤 Opciones de Exportación y Gestión {#export_&_management_options}
 
 Usa el menú **⋮** (arriba a la derecha) para:
 
@@ -59,7 +59,7 @@ Usa el menú **⋮** (arriba a la derecha) para:
 
 ---
 
-## ⚙️ Avanzado: Deshabilitar el Registro para Macros Específicas
+## ⚙️ Avanzado: Deshabilitar el Registro para Macros Específicas {#disabling_logging_for_specific_macros}
 
 Para evitar que el registro se llene de entradas repetitivas de macros de alta frecuencia (p. ej., una que verifica la batería cada minuto), puedes deshabilitar el registro por completo para macros individuales:
 
@@ -73,7 +73,7 @@ Esto mantiene tu registro enfocado en eventos importantes sin afectar la funcion
 
 ---
 
-## 💡 Consejos Pro
+## 💡 Consejos Pro {#pro_tips}
 
 1. **Depuración**: Cuando una macro se comporte mal, revisa el registro para ver dónde falló  
 2. **Marca de Tiempo**: Todas las entradas incluyen la hora exacta de ejecución  
