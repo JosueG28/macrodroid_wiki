@@ -5,7 +5,7 @@ It is essential for troubleshooting and understanding how your automations work.
 
 ---
 
-## 📚 What Gets Recorded
+## 📚 What Gets Recorded  {#what_gets_recorded}
 
 - Trigger activations (e.g., "WiFi connected")  
 - Actions performed (e.g., "Notification sent")  
@@ -16,7 +16,7 @@ It is essential for troubleshooting and understanding how your automations work.
 
 ---
 
-## 🔢 Log Levels
+## 🔢 Log Levels  {#log_levels}
 
 MacroDroid categorizes entries based on their importance:
 
@@ -29,7 +29,7 @@ MacroDroid categorizes entries based on their importance:
 
 ---
 
-## 🔍 Filtering the Log
+## 🔍 Filtering the Log  {#filtering_the_log}
 
 Tap the **filter icon** (top-right) to narrow results:
 
@@ -46,7 +46,7 @@ Tap the **filter icon** (top-right) to narrow results:
 
 ---
 
-## 📤 Export & Management Options
+## 📤 Export & Management Options {#export_&_management_options}
 
 Use the **⋮ menu** (top-right) for:
 
@@ -59,7 +59,7 @@ Use the **⋮ menu** (top-right) for:
 
 ---
 
-## ⚙️ Advanced: Disabling Logging for Specific Macros
+## ⚙️ Advanced: Disabling Logging for Specific Macros  {#disabling_logging_for_specific_macros}
 
 To prevent the log from becoming cluttered with repetitive entries from high-frequency macros (e.g., one that checks battery every minute), you can disable logging entirely for individual macros:
 
@@ -73,7 +73,7 @@ This keeps your log focused on important events without affecting the macro's fu
 
 ---
 
-## 💡 Pro Tips
+## 💡 Pro Tips  {#pro_tips}
 
 1. **Debugging**: When a macro misbehaves, check the log to see where it failed  
 2. **Timestamp**: All entries include the exact execution time  
