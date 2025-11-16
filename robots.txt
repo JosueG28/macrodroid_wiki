@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://josueg28.github.io/macrodroid_wiki/sitemap.xml
