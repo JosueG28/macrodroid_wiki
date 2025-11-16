@@ -79,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#texto-magico-en-macrodroid" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -863,8 +858,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1021,8 +1014,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -1038,32 +1029,9 @@
 
 
 
-<h1 id="texto-magico-en-macrodroid">Texto Mágico en MacroDroid</h1>
-<p>El <strong>texto mágico</strong> permite usar valores dinámicos en acciones, condiciones y más.</p>
-<hr />
-<p>=== "🔒 Requiere Trigger"</p>
-<pre><code>Estas variables **solo están disponibles si un trigger se activó**.
+  <h1>📄 About action blocks</h1>
 
-| Variable | Descripción |
-|---------|-------------|
-| `[trig_name]` | Nombre del trigger |
-| `[trig_time]` | Hora del disparo |
-| `[trig_date]` | Fecha del disparo |
 
-&gt; Usa en: `Send SMS: Trigger [trig_name] activado a las [trig_time]`
-</code></pre>
-<p>=== "🌐 Globales (sin trigger)"</p>
-<pre><code>Funcionan **en cualquier momento**.
-
-| Variable | Descripción |
-|---------|-------------|
-| `[date]` | Fecha actual |
-| `[time]` | Hora actual |
-| `[battery]` | % de batería |
-| `[wifi_ssid]` | Nombre de red WiFi |
-
-&gt; Ejemplo: `If [battery] &lt; 15% → Turn On: WiFi`
-</code></pre>
 
 
 
