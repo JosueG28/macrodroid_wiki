@@ -3,6 +3,7 @@
 site_name: MacroDroid Wiki
 site_description: Unofficial MacroDroid Documentation
 site_author: JosueG28
+site_url: https://josueg28.github.io/macrodroid_wiki/
 
 # 2. CONFIGURACIÓN DEL TEMA (Visuales, Idioma, Paleta de Colores, Fuente)
 # 2. THEME CONFIGURATION (Visuals, Language, Color Palette, Font)
@@ -14,6 +15,7 @@ theme:
   # --- Visual elements ---
   logo: assets/macrodroid_icon.png
   favicon: assets/favicon.ico
+  
   # --- HIDE TOC ---
   features:
     - navigation.toc.hide
@@ -28,28 +30,28 @@ theme:
   # Al haber tres entradas en la lista 'palette', se mostrará un menú desplegable.
   palette:
     # 1. MODO AUTOMÁTICO (Predeterminado: Detecta la preferencia del sistema)
-    - media: "(prefers-color-scheme)" # Coincide con cualquier preferencia de esquema de color del sistema
+    - media: "(prefers-color-scheme)" 
       scheme: preference
-      primary: blue                    # Color de marca MacroDroid
-      accent: blue
+      primary: blue
+      accent: indigo
       toggle:
         icon: material/brightness-auto 
         name: Seguir la preferencia del sistema
 
     # 2. MODO CLARO (Opción manual)
-    - media: "(prefers-color-scheme: light)" # Ayuda a que el tema sepa cuál es el esquema de luz
+    - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue
-      accent: black                    # Alto contraste en modo claro
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Cambiar a tema Oscuro (Manual)
 
     # 3. MODO OSCURO (Opción manual)
-    - media: "(prefers-color-scheme: dark)" # Ayuda a que el tema sepa cuál es el esquema oscuro
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue
-      accent: white                    # Alto contraste en modo oscuro
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Cambiar a tema Claro (Manual)
@@ -57,13 +59,16 @@ theme:
 # 3. EXTENSIONES DE MARKDOWN (Para mejorar la calidad del contenido)
 # 3. MARKDOWN EXTENSIONS (To improve content quality)
 markdown_extensions:
-  - admonition        # Permite crear cajas de notas, advertencias, etc.
-  - pymdownx.details  # Permite crear bloques de contenido expandibles/ocultables
+  - admonition
+  - pymdownx.details
+  - attr_list
 
-# 4. PLUGINS ESENCIALES (Multi-Idioma, Búsqueda y Metadatos de Git)
-# 4. ESSENTIAL PLUGINS (Multi-Language, Search, and Git Metadata)
+# 4. PLUGINS ESENCIALES (Multi-Idioma, Búsqueda, Sitemap y Metadatos de Git)
+# 4. ESSENTIAL PLUGINS (Multi-Language, Search, Sitemap and Git Metadata)
 plugins:
   - search
+
+  # --- Multi-Idioma / Multi-Language ---
   - i18n:
       docs_structure: folder
       languages:
@@ -125,7 +130,7 @@ plugins:
             - 📁 Registro de MacroDroid: 
                   - 📄 Registro del sistema: macrodroid_log/system_log.md
                   - 📄 Registro de usuario: macrodroid_log/user_log.md
-            - 📁 Action Blocks:
+            - 📁 Bloques de acción:
                   - 📄 Acerca de los Bloques de Accion: action_blocks/about_action_blocks.md
             - 📁 Cronómetros:
                   - 📄 Acerca de los cronómetros: stopwatches/about_stopwatches.md
@@ -134,14 +139,12 @@ plugins:
                   - 📄 Requiere disparador: magic_text/trigger_required/requires_trigger.md
                   - 📄 No requiere disparador: magic_text/no_trigger_required/no_trigger_required.md
 
-  - git-revision-date-localized:
-      type: date # Muestra la fecha de última modificación / Shows the last modification date
-
 # 5. EXTRAS FOR LANGUAGE SELECTOR
 extra:
-# Oculta el mensaje "Hecho con Material for MkDocs" en el pie de página
+  # Oculta el mensaje "Hecho con Material for MkDocs" en el pie de página
   generator: false
-# Configuración del selector de idioma
+
+  # Configuración del selector de idioma
   alternate:
     - name: English
       link: "/macrodroid_wiki/"
@@ -151,11 +154,8 @@ extra:
       lang: es
       
 extra_css:
-  - extra.css # Ajusta la ruta si tu archivo no está en la raíz de 'docs/'
-# ---
-# Esto inyecta la clase CSS 'show-toc' en el <body> de la página,
-# lo que anula la regla de 'display: none' en nuestro CSS modificado.
-# class: show-toc
-# ---
+  - extra.css
+
 extra_javascript:
+  - assets/lang-redirect.js
   - assets/bmc.js
