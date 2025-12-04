@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduccion-a-las-acciones" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -426,6 +431,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 Acerca de las acciones
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -438,6 +458,88 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when_to_use_them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuándo Usarlas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types_of_actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Acciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what_about_actions_that_take_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué pasa con acciones que tardan?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what_if_the_action_is_asynchronous_and_i_need_its_result" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Y si la acción es asíncrona y necesito su resultado?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important_limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitaciones Importantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple_example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo Simple: "Ajustar Volumen al Llegar a Casa"
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1014,6 +1116,79 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when_to_use_them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuándo Usarlas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types_of_actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Acciones
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what_about_actions_that_take_time" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué pasa con acciones que tardan?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what_if_the_action_is_asynchronous_and_i_need_its_result" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Y si la acción es asíncrona y necesito su resultado?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important_limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limitaciones Importantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple_example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo Simple: "Ajustar Volumen al Llegar a Casa"
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1029,9 +1204,64 @@
 
 
 
-  <h1>📄 Acerca de las acciones</h1>
-
-
+<h1 id="introduccion-a-las-acciones">Introducción a las Acciones</h1>
+<h2 id="description">Descripción</h2>
+<p>Una acción es algo que tu dispositivo puede hacer cuando se ejecuta una macro. Para que una macro sea válida, debe tener al menos una acción.<br />
+Las acciones son los "hacedores" de MacroDroid: realizan tareas como enviar un mensaje, ajustar el volumen, hacer una solicitud HTTP o ejecutar un script, entre muchas otras.</p>
+<h2 id="when_to_use_them">Cuándo Usarlas</h2>
+<p>Las acciones se utilizan para automatizar tareas en respuesta a triggers (desencadenantes) o condiciones.<br />
+Son esenciales para cualquier macro, ya que definen qué sucede una vez que se activa.<br />
+Por ejemplo, si un trigger detecta que llegas a casa, una acción podría encender las luces o reproducir música.</p>
+<h2 id="types_of_actions">Tipos de Acciones</h2>
+<p>MacroDroid ofrece una amplia variedad de acciones categorizadas para facilitar su uso:<br />
+- <strong>Dispositivo y Sistema:</strong> Ajustar brillo, volumen, Wi-Fi, Bluetooth, etc.<br />
+- <strong>Aplicaciones:</strong> Lanzar apps, simular toques, copiar texto.<br />
+- <strong>Red y Comunicación:</strong> Enviar SMS, emails, solicitudes HTTP.<br />
+- <strong>Variables y Lógica:</strong> Establecer variables, bucles, condicionales.<br />
+- <strong>Avanzadas:</strong> Scripts shell, plugins, interacciones con otros dispositivos.  </p>
+<p>Puedes explorar todas desde el selector de acciones al editar una macro.</p>
+<h2 id="what_about_actions_that_take_time">¿Qué pasa con acciones que tardan?</h2>
+<p>La mayoría de las acciones se ejecutan al instante, pero algunas <strong>toman tiempo</strong>, como solicitudes HTTP, scripts largos o acciones que dependen de accesibilidad.</p>
+<p>MacroDroid maneja esto de dos maneras:</p>
+<ul>
+<li><strong>Acciones síncronas:</strong> Terminan <em>antes</em> de que continúe la siguiente acción.</li>
+<li><strong>Acciones asíncronas:</strong> Empiezan, pero la macro sigue corriendo en paralelo.</li>
+</ul>
+<p>Si necesitas que MacroDroid espere a que la acción termine, activa la opción:</p>
+<p><strong>“Bloquear la siguiente acción hasta completar”</strong></p>
+<p>Esto es clave cuando necesitas usar datos obtenidos por una acción que tarda.</p>
+<h2 id="what_if_the_action_is_asynchronous_and_i_need_its_result">¿Y si la acción es asíncrona y necesito su resultado?</h2>
+<p>MacroDroid <strong>no tiene callbacks</strong> ni un sistema para “cuando termine, ejecuta esto otro”, como en lenguajes de programación.<br />
+La forma práctica de manejar esto es usando alguno de estos métodos:</p>
+<ul>
+<li><strong>Guardar el resultado en una variable</strong>.</li>
+<li><strong>Usar Wait o un bucle</strong> hasta que cambie esa variable.</li>
+<li><strong>Activar otra macro</strong> cuando el resultado esté listo (por variable global, evento, etc.).</li>
+</ul>
+<p><strong>Caso:</strong> Haces una solicitud HTTP para obtener un precio.</p>
+<ul>
+<li>Si necesitas usar ese valor <em>inmediatamente</em>, activa <strong>Bloquear la siguiente acción hasta completar</strong> en la acción HTTP.  </li>
+<li>Si no quieres bloquear:</li>
+<li>Guarda la respuesta en una variable,</li>
+<li>pon un <strong>Wait</strong>,</li>
+<li>revisa esa variable más adelante,</li>
+<li>o dispara otra macro cuando cambie.</li>
+</ul>
+<p><strong>¿Qué pasa si no usas bloqueo y validas datos?</strong> Si una acción asíncrona no ha terminado cuando intentas usar sus datos (por ejemplo, en una validación o condicional), los datos no estarán disponibles. La macro podría fallar, saltar pasos o usar valores incorrectos (como vacíos, anteriores o predeterminados).<br />
+Para evitarlo, siempre incluye condiciones que manejen esto: verifica si la variable ha cambiado antes de proceder, o usa un bucle para esperar.</p>
+<h2 id="important_limitations">Limitaciones Importantes</h2>
+<ul>
+<li>Algunas acciones requieren permisos especiales (e.g., root para scripts shell avanzados).</li>
+<li>Acciones asíncronas sin bloqueo pueden complicar flujos si no se manejan bien.</li>
+<li>No todas las acciones devuelven datos directamente; usa variables para capturar resultados.</li>
+<li>En dispositivos con restricciones (e.g., Android 10+), algunas acciones como accesibilidad necesitan configuración extra.</li>
+</ul>
+<h2 id="simple_example">Ejemplo Simple: "Ajustar Volumen al Llegar a Casa"</h2>
+<ul>
+<li><strong>Trigger:</strong> Ubicación (llegada a casa).</li>
+<li><strong>Acción:</strong> Establecer Volumen (Multimedia a 50%).</li>
+<li><strong>Resultado:</strong> Al detectar tu llegada, el volumen se ajusta automáticamente.</li>
+</ul>
 
 
 

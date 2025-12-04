@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduccion-al-texto-magico" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -926,6 +931,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 Acerca del texto mágico
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -938,6 +958,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where_to_find_it" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Dónde lo encuentras?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_magic_text_is_written" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo se escribe el Texto Mágico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonly_used_basic_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos básicos que más se usan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo práctico: Notificación personalizada
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1014,6 +1098,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where_to_find_it" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Dónde lo encuentras?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_magic_text_is_written" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cómo se escribe el Texto Mágico
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonly_used_basic_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplos básicos que más se usan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo práctico: Notificación personalizada
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1029,9 +1168,95 @@
 
 
 
-  <h1>📄 Acerca del texto mágico</h1>
-
-
+<h1 id="introduccion-al-texto-magico">Introducción al Texto Mágico</h1>
+<h2 id="description">Descripción</h2>
+<p>El <strong>Texto Mágico</strong> es la forma en que MacroDroid inserta datos dinámicos (variables, hora, ubicación, batería, etc.) dentro de cualquier campo de texto: títulos de notificaciones, mensajes SMS, nombres de archivos, URLs, etc.<br />
+En vez de escribir texto fijo que nunca cambia, el Texto Mágico se sustituye por el valor real en el momento exacto en que se ejecuta la macro.</p>
+<h2 id="where_to_find_it">¿Dónde lo encuentras?</h2>
+<p>Casi siempre que veas un campo de texto en un trigger, acción o restricción, aparecerá un botón con <strong>“…”</strong>.<br />
+Al pulsarlo se abre el selector completo de Texto Mágico disponible en ese contexto.</p>
+<p><strong>Consejo:</strong> Si ya sabes el código, también puedes escribirlo a mano (pero cuidado con los errores de tipeo).</p>
+<h2 id="how_magic_text_is_written">Cómo se escribe el Texto Mágico</h2>
+<p>Hay <strong>dos formas válidas</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>Ejemplo</th>
+<th>Recomendado para</th>
+<th>Compatibilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llaves <code>{}</code></td>
+<td><code>{hour}</code></td>
+<td>Todo (especialmente diccionarios)</td>
+<td>Desde v5.21 en adelante</td>
+</tr>
+<tr>
+<td>Corchetes <code>[]</code></td>
+<td><code>[hour]</code></td>
+<td>Versiones antiguas</td>
+<td>Todas las versiones</td>
+</tr>
+</tbody>
+</table>
+<p><strong>¡Recomendación actual:</strong> Usa siempre <strong>llaves <code>{}</code></strong>, son más claras, especialmente con diccionarios y arrays.</p>
+<h2 id="commonly_used_basic_examples">Ejemplos básicos que más se usan</h2>
+<table>
+<thead>
+<tr>
+<th>Qué quieres insertar</th>
+<th>Texto Mágico</th>
+<th>Resultado de ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hora actual (formato 24h)</td>
+<td><code>{hour}</code></td>
+<td>14</td>
+</tr>
+<tr>
+<td>Dia de la semana</td>
+<td><code>{dayofweek}</code></td>
+<td>monday</td>
+</tr>
+<tr>
+<td>Nivel de batería</td>
+<td><code>{battery}</code></td>
+<td>68</td>
+</tr>
+<tr>
+<td>Nombre de la Wi-Fi conectada</td>
+<td><code>{ssid}</code></td>
+<td>Casa_Juan</td>
+</tr>
+<tr>
+<td>Brillo actual</td>
+<td><code>{current_brightness}</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td>Texto del portapapeles</td>
+<td><code>{clipboard}</code></td>
+<td>https://…</td>
+</tr>
+<tr>
+<td>Año</td>
+<td><code>{year}</code></td>
+<td>2026</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Ejemplo práctico: Notificación personalizada</h2>
+<p><strong>Acción:</strong> Mostrar notificación<br />
+<strong>Título:</strong> ¡Hola {lv=nombre}!<br />
+<strong>Texto:</strong> Hoy es {datdayofweeke} y tu batería está al {battery}%. La Wi-Fi actual es {ssid}.</p>
+<p>Resultado al ejecutarse:<br />
+¡Hola Ana!<br />
+Hoy es monday y tu batería está al 72%. La Wi-Fi actual es Casa_Ana.</p>
 
 
 

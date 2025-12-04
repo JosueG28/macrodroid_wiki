@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction-to-magic-text" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -926,6 +931,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 About magic text
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -938,6 +958,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where_to_find_it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where to find it
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_magic_text_is_written" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Magic Text is written
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonly_used_basic_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commonly used basic examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical example: Personalized notification
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1014,6 +1098,61 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where_to_find_it" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where to find it
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how_magic_text_is_written" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Magic Text is written
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commonly_used_basic_examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commonly used basic examples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical example: Personalized notification
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1029,9 +1168,95 @@
 
 
 
-  <h1>📄 About magic text</h1>
-
-
+<h1 id="introduction-to-magic-text">Introduction to Magic Text</h1>
+<h2 id="description">Description</h2>
+<p><strong>Magic Text</strong> is MacroDroid’s way of inserting dynamic data (variables, time, location, battery, etc.) into almost any text field: notification titles, SMS messages, file names, URLs, and more.<br />
+Instead of writing fixed text that never changes, Magic Text is replaced with the real value at the exact moment the macro runs.</p>
+<h2 id="where_to_find_it">Where to find it</h2>
+<p>Almost every time you see a text field in a trigger, action, or constraint, you'll find a <strong>“…”</strong> button.<br />
+Tapping it opens the full Magic Text selector available in that context.</p>
+<p><strong>Tip:</strong> If you already know the code, you can type it manually (but be careful with typos).</p>
+<h2 id="how_magic_text_is_written">How Magic Text is written</h2>
+<p>There are <strong>two valid formats</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Example</th>
+<th>Recommended for</th>
+<th>Compatibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Braces <code>{}</code></td>
+<td><code>{hour}</code></td>
+<td>Everything (especially dictionaries)</td>
+<td>From v5.21 onward</td>
+</tr>
+<tr>
+<td>Brackets <code>[]</code></td>
+<td><code>[hour]</code></td>
+<td>Older versions</td>
+<td>All versions</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current recommendation:</strong> Always use <strong>braces <code>{}</code></strong>, they are clearer, especially with dictionaries and arrays.</p>
+<h2 id="commonly_used_basic_examples">Commonly used basic examples</h2>
+<table>
+<thead>
+<tr>
+<th>What you want to insert</th>
+<th>Magic Text</th>
+<th>Example output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current time (24h format)</td>
+<td><code>{hour}</code></td>
+<td>14</td>
+</tr>
+<tr>
+<td>Day of the week</td>
+<td><code>{dayofweek}</code></td>
+<td>monday</td>
+</tr>
+<tr>
+<td>Battery level</td>
+<td><code>{battery}</code></td>
+<td>68</td>
+</tr>
+<tr>
+<td>Connected Wi-Fi SSID</td>
+<td><code>{ssid}</code></td>
+<td>Home_WiFi</td>
+</tr>
+<tr>
+<td>Current brightness</td>
+<td><code>{current_brightness}</code></td>
+<td>26</td>
+</tr>
+<tr>
+<td>Clipboard text</td>
+<td><code>{clipboard}</code></td>
+<td>https://…</td>
+</tr>
+<tr>
+<td>Year</td>
+<td><code>{year}</code></td>
+<td>2026</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Practical example: Personalized notification</h2>
+<p><strong>Action:</strong> Show Notification<br />
+<strong>Title:</strong> <code>Hello {lv=name}!</code><br />
+<strong>Text:</strong> <code>Today is {dayofweek} and your battery is at {battery}%. Your current Wi-Fi is {ssid}.</code></p>
+<p><strong>Output when executed:</strong></p>
+<p>Hello Ana!<br />
+  Today is monday and your battery is at 72%. Your current Wi-Fi is Home_Ana.</p>
 
 
 

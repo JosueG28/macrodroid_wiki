@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction-to-constraints" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -517,6 +522,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    📄 About the constraints
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -529,6 +549,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applying-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applying Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraint-nesting-advanced-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraint Nesting (Advanced Logic)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-example-notification-only-at-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Example: “Notification Only at Home”
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1014,6 +1125,88 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Them
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applying-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Applying Constraints
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constraint-nesting-advanced-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constraint Nesting (Advanced Logic)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Benefits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Important Limitations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-example-notification-only-at-home" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simple Example: “Notification Only at Home”
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1029,9 +1222,64 @@
 
 
 
-  <h1>📄 About the constraints</h1>
-
-
+<h1 id="introduction-to-constraints">Introduction to Constraints</h1>
+<h2 id="description">Description</h2>
+<p>A constraint in MacroDroid is an optional tool that lets you control when a macro or a specific action is allowed to run.<br />
+They are based on conditions that must be met to permit or block the execution of macros and actions.<br />
+Constraints act as “gatekeepers” that check whether it’s the right moment for something to happen, adding conditional logic to your automations.</p>
+<h2 id="when-to-use-them">When to Use Them</h2>
+<p>Use constraints to refine how your macros behave and prevent unnecessary or poorly timed executions.<br />
+If a trigger detects <em>“screen on”</em>, a constraint could validate that the time is between 8:00 AM and 10:00 PM before activating an action like adjusting brightness or turning on reading mode.<br />
+This prevents the macro from firing at midnight when it wouldn’t make sense.</p>
+<h2 id="types-of-constraints">Types of Constraints</h2>
+<p>MacroDroid offers a wide range of constraints, categorized for convenience:<br />
+- <strong>Device &amp; State:</strong> Battery, airplane mode, screen orientation, etc.<br />
+- <strong>Time &amp; Date:</strong> Day of the week, specific time, intervals.<br />
+- <strong>Location &amp; Connectivity:</strong> Wi-Fi, Bluetooth, geofence, GPS.<br />
+- <strong>Variables &amp; Logic:</strong> Variable value, comparison, regular expressions.<br />
+- <strong>Apps &amp; Events:</strong> App in foreground, notification received, etc.<br />
+- <strong>Advanced Logic:</strong> AND/OR/XOR/NOT to nest complex conditions.  </p>
+<p>You can explore them all in the constraint selector when editing a macro.</p>
+<h2 id="applying-constraints">Applying Constraints</h2>
+<p>Constraints can be applied in several ways for greater control:</p>
+<ul>
+<li><strong>To the entire macro:</strong> In the ‘Constraints’ tab at the bottom. The macro only runs if all constraints are met.</li>
+<li><strong>To individual triggers:</strong> Select a trigger, tap ‘Add Constraint’. The trigger only counts if the constraint is true.</li>
+<li><strong>To individual actions:</strong> Select an action, tap ‘Add Constraint’. The action only runs if the constraint is met.</li>
+</ul>
+<p>This gives you precision: for example, limit an action to run only if the battery is above 20%.</p>
+<h2 id="constraint-nesting-advanced-logic">Constraint Nesting (Advanced Logic)</h2>
+<p>For more sophisticated logic, use the <strong>AND/OR/XOR/NOT</strong> constraint.<br />
+Any constraints nested under it will be evaluated using that logic operator. You can nest multiple operators to create complex conditions.</p>
+<p>Structure example:</p>
+<pre><code>│ - Constraint 1 (e.g., Battery &gt; 50%)
+│ - OR
+│ - Constraint 2 (e.g., Wi-Fi connected)
+│ - Constraint 3 (e.g., Bluetooth enabled)
+</code></pre>
+<p>In this case, Constraint 1 must be true <strong>AND</strong> at least one of (Constraint 2 <strong>OR</strong> Constraint 3) must be true.</p>
+<p>Use this to combine conditions intelligently, such as “Only run if it’s daytime AND (you’re at home OR at work).”</p>
+<h2 id="key-benefits">Key Benefits</h2>
+<ul>
+<li><strong>Precision:</strong> Prevents accidental executions and saves battery/resources.</li>
+<li><strong>Flexibility:</strong> Combine with triggers and actions for smart automations.</li>
+<li><strong>Complex Logic:</strong> Nesting allows advanced rules without coding.</li>
+<li><strong>Efficiency:</strong> Cleaner, safer macros with built-in conditions.</li>
+</ul>
+<h2 id="important-limitations">Important Limitations</h2>
+<ul>
+<li>Constraints are optional; without them, the macro runs whenever the trigger fires.</li>
+<li>Logical nesting can get complex; start with simple macros first.</li>
+<li>Some constraints require permissions (e.g., GPS for location).</li>
+<li>They don’t replace “If” conditions in actions; use constraints for global or element-specific control.</li>
+</ul>
+<h2 id="simple-example-notification-only-at-home">Simple Example: “Notification Only at Home”</h2>
+<ul>
+<li><strong>Trigger:</strong> Low battery (&lt;20%).</li>
+<li><strong>Action:</strong> Send notification (“Charge your phone”).</li>
+<li><strong>Constraint:</strong> Location (at home).</li>
+<li><strong>Result:</strong> The notification appears only when you're at home, avoiding unnecessary alerts elsewhere.</li>
+</ul>
 
 
 
