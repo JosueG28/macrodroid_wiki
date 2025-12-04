@@ -8,7 +8,7 @@ Debido a que se desarrolla en momentos disponibles, las actualizaciones pueden n
 Si deseas apoyar este proyecto, puedes hacerlo a través de [Buy Me a Coffee](https://buymeacoffee.com/josueg28)  
 ☕ — ¡toda ayuda es muy apreciada!
 
-## 🚀 Comienza Aquí
+## 🚀 Comienza Aquí {#start_here}
 
 
 Ya seas principiante o usuario avanzado, esta wiki tiene todo lo que necesitas. Explora las áreas clave de MacroDroid:
@@ -32,7 +32,7 @@ Ya seas principiante o usuario avanzado, esta wiki tiene todo lo que necesitas. 
     Inserta contenido dinámico en notificaciones, registros y más.
     
 
-## 🛠️ En Desarrollo
+## 🛠️ En Desarrollo {#in_development}
 
 Esta wiki está en desarrollo activo. Algunas páginas pueden estar incompletas o en proceso — vuelve regularmente para ver las actualizaciones.
 
