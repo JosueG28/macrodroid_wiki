@@ -7,7 +7,7 @@ Because it’s developed during available spare time, updates may not be as fast
 If you’d like to support this project, you can do so through [Buy Me a Coffee](https://buymeacoffee.com/josueg28).  
 ☕ — every bit of support is greatly appreciated!
 
-## 🚀 Start Here {#}
+## 🚀 Start Here {#start_here}
 
 Whether you’re a beginner or an advanced user, this wiki has everything you need. Explore the key areas of MacroDroid:
 
@@ -29,7 +29,7 @@ Whether you’re a beginner or an advanced user, this wiki has everything you ne
 - **Magic Text**  
     Insert dynamic content into notifications, logs, and more.
 
-## 🛠️ In Development {#}
+## 🛠️ In Development {#in_development}
 
 This wiki is under active development. Some pages may be incomplete or in progress — check back regularly for updates.
 
