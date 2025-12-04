@@ -1,42 +1,46 @@
 # 📱 Welcome to the Unofficial MacroDroid Wiki
 
-**Created and maintained by Josue Garcia**
+**Project created and maintained by [Josué García](https://github.com/JosueG28)**
 
-Welcome to your go-to source for everything MacroDroid — the powerful Android automation app.  
-This wiki aims to provide clear, structured, and constantly updated documentation to help you master automation with ease.
+This project was created in my free time with the goal of offering a clear, structured, and constantly updated source of information about **MacroDroid**.  
+Because it’s developed during available spare time, updates may not be as fast as I’d like.  
+If you’d like to support this project, you can do so through [Buy Me a Coffee](https://buymeacoffee.com/josueg28).  
+☕ — every bit of support is greatly appreciated!
 
----
+## 🚀 Start Here {#}
 
-## 🚀 Get Started
+Whether you’re a beginner or an advanced user, this wiki has everything you need. Explore the key areas of MacroDroid:
 
-Whether you're a beginner or a power user, this wiki has you covered. Explore key areas of MacroDroid:
+- [**Triggers**](triggers/about_triggers)  
+    What starts your macros.
 
-- [**Triggers**](triggers/about_triggers.md)  
-  What initiates your macros.  
+- [**Actions**](actions/about_actions)  
+    What MacroDroid does in response to triggers.
 
-- [**Actions**](actions/about_actions.md)  
-  The things MacroDroid can do in response to triggers.  
+- [**Constraints**](constraints/about_constraints)  
+    Add logic and control over when your macros activate.
 
-- [**Constraints**](constraints/about_constraints.md)  
-  Add logic and control to when your macros activate.
+- [**Variables**](variables/about_variables)  
+    Store, modify, and use dynamic values within your macros.
 
-- [**Variables**](variables/about_variables.md)  
-  Store, change, and use dynamic values across your macros.
+- **Plugins & Integrations**  
+    Expand MacroDroid’s capabilities with external tools.
 
-- [**Plugins & Integrations**]()  
-  Expand MacroDroid’s capabilities with external tools.
+- **Magic Text**  
+    Insert dynamic content into notifications, logs, and more.
 
-- [**Magic Text**]()  
-  Insert dynamic content into notifications, logs, and more.
-
----
-
-## 🛠️ Still in Progress
+## 🛠️ In Development {#}
 
 This wiki is under active development. Some pages may be incomplete or in progress — check back regularly for updates.
 
-Have suggestions or found something worth improving? You're welcome to share ideas or open an issue on [GitHub](https://github.com/JosueG28/macrodroid_wiki/issues). Contributions and feedback are appreciated, but inclusion or response isn't guaranteed.
+> 🔒 This wiki has **closed editing** to maintain content order and consistency.  
+> Still, I **welcome recommendations, suggestions, or reports** about missing or improvable content.  
+> However, not all changes can be guaranteed.
 
----
+You can share your ideas or suggestions by opening an issue on [GitHub](https://github.com/JosueG28/macrodroid_wiki/issues).  
+Contributions and feedback are always welcome 💬
 
-> *Disclaimer: This wiki is unofficial and not affiliated with the official MacroDroid team.*
+> Notice: This wiki is unofficial and not affiliated with the official MacroDroid team.
+
+© 2025 [JosueG28](https://github.com/JosueG28) — All rights reserved.  
+See the full terms in the [MacroDroid Wiki License](https://github.com/JosueG28/macrodroid_wiki?tab=License-1-ov-file).
